@@ -1,0 +1,162 @@
+@media (max-width: 767px) {  
+    /*在小于768像素的屏幕里,这里的样式才生效*/
+    #video-01{
+		width: 300px!important;
+		height: 300px;
+		background: red;
+    }
+    .video-player{
+    	width: 100%;
+		min-width: 300px;
+
+    }
+    .list-pic-width{
+		width: 100%;
+		margin-bottom: 10px;
+    }
+    .list-house-width{
+		width: 100%;
+		margin:0;
+    }
+    .player-video-wrapper{
+		height: 300px;
+    }
+    .outdoor-scene{
+		width: 100%;
+    }
+    .carousel-group-g{
+    	height: 200px;
+    }
+    .list-mg-0{
+    	margin-bottom: 10px;
+    }
+    .md-contact{
+	display: none;
+	}
+	.main-wrap-pdtop{
+		padding-top: 30px;
+	}
+	.text-txt{
+		margin-bottom: 30px;
+	}
+	.navbar-logo{
+	margin-left:-12px;
+
+	}
+	.navbar-mglft{
+		margin-left:0px;
+		}
+	.navbar-collapse-g{
+		width: 100%;
+	}
+	.xs-contact{
+		margin:20px auto;
+	}
+	.navbar-bg-toggle .icon-bar{
+		background: #a6a9bb;
+	}
+	.navbar-display-none{
+		display: none;
+	}
+	.navbar-txt-mglf{
+		margin-left: 10px;
+	}
+	.navbar-display{
+		display:block;
+	}
+	.map-type{
+		padding-bottom:0px;
+	}
+	.list-house-width{
+		margin-bottom: 10px;
+	}
+    .with-bg-2{
+        position: relative;
+        height: 250px!important;
+    }
+    .with-bg-3{
+        height: 200px;
+        position: absolute;
+        top: 20px;
+    }
+    .with-bg-02{
+    height: 820px;
+}
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+    .navbar-mglft{
+		margin:0px auto;
+		float: right;
+    } 
+    .page-scroll-mgrt{
+    	margin-right: 10px;
+    }
+    .navbar-mglft{
+    	margin-left: 0;
+    }
+    .menu-navbar{
+    	width: 76%;
+    	height: 40px;
+    	overflow: hidden;
+
+    }
+    .xs-contact{display: none;}
+    .navbar-display{
+		display: none;
+    }
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/ 
+    .navbar-mglft{
+		margin:0px auto;
+		float: right;
+    } 
+    .page-scroll-mgrt{
+    	margin-right: 20px;
+    }
+    .xs-contact{display: none;}
+    .list-group-house .list-house-width{
+		margin-right: 30px;
+    }
+    .list-group-house .list-house-width:last-child{
+    	margin-right: 0;
+    }
+    .map-type{
+    	margin-bottom: 60px;
+    }
+    .map-wrap {
+    	width: 87%;
+    	margin-bottom: 60px;
+    }
+    .navbar-display{
+		display: none;
+    }
+}  
+@media (min-width: 1200px) {  
+    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+    .navbar-mglft{
+        width: 85%;
+		margin-right:0px;
+		float: right;
+    }
+    .navbar-mglft{
+	margin-left:0px;
+
+	}
+	.xs-contact{display: none;}
+	.map-wrap {
+    	width: 65%;
+    	margin-bottom: 60px;
+    }
+    .item-center{
+    	height: 422px;
+    }
+    .item-center img{
+		margin:0 auto;
+		height: 100%!important;
+    }
+    .navbar-display{
+		display: none;
+    }
+}  
