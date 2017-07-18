@@ -34,7 +34,7 @@ $(document).ready(function() {
 	
 	
 	//参数说明  地图中心点(与地址一致或自己设定)/价格/房源地址/地图放大倍数默认10
-	$("#location").mapmarker('4807 PATRICK PLACE', '$289,000', '4807 PATRICK PLACE',12);
+	$("#location").mapmarker('4807 PATRICK PLACE', '$289,000', '4807 PATRICK PLACE',14);
 	
 	//$.ajax({
 	//	type: 'POST',
