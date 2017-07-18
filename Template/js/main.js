@@ -4,6 +4,11 @@ $(document).ready(function() {
 	var opendayUri = 'http://www.yujiahao.cn/sp/get/openhouse/';
 	var housepic = 'http://www.yujiahao.cn/sp/get/imgs/';
 	var contact = 'http://www.yujiahao.cn/sp/call/agent/';
+	var agentid = '';
+	var name = '';
+	var tel = '';
+	var email = '';
+	var desc = '';
 
 	$.get(opendayUri, {
 			"mls": mls
@@ -26,28 +31,48 @@ $(document).ready(function() {
 				$('.list-group-pic').find('#house-pic-' + i).attr('data-info', open[i - 1].desc);
 			}
 		});
+	$('#submit').onclick = function() {
+		name = $('#name').value;
+		tel = $('tel').value;
+		email = $('email').value;
+		desc = $('desc').value;
+		if(name.empty()) {
+			new Toast({
+				context: $('body'),
+				message: '请输入姓名'
+			}).show();
+			return;
+		}
 
-	//联系经纪人
-	$.post(contact,{
-		
-	});
-	
-	
+		//联系经纪人
+		$.post(contact, {
+			'mls': mls,
+			'agentid': agentid,
+			'name': name,
+			'tel': tel,
+			'email': email,
+			'desc': desc
+		}, function(data, status) {
+			alert(data);
+		});
+
+	}
+
 	//参数说明  地图中心点(与地址一致或自己设定)/价格/房源地址/地图放大倍数默认10
-	$("#location").mapmarker('4807 PATRICK PLACE', '$289,000', '4807 PATRICK PLACE',14);
-	
+	$("#location").mapmarker('4807 PATRICK PLACE', '$289,000', '4807 PATRICK PLACE', 14);
+
 	//$.ajax({
 	//	type: 'POST',
 	//	url: contact,
 	//	dataType: 'json/application',
-	//	data: {
-	//		'mls': mls,
-	//		'agentid': agentid,
-	//		'name': name,
-	//		'tel': tel,
-	//		'email': email,
-	//		'desc': desc
-	//	},
+	//		data: {
+	//			'mls': mls,
+	//			'agentid': agentid,
+	//			'name': name,
+	//			'tel': tel,
+	//			'email': email,
+	//			'desc': desc
+	//		},
 	//	success: function(res) {
 	//
 	//	},
@@ -167,5 +192,3 @@ $(document).ready(function() {
 	}
 
 });
-
-//		}
