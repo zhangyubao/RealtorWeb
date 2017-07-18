@@ -266,6 +266,7 @@ li {
 
 .detail-list p {
 	font-size: 16px;
+	white-space: nowrap;
 	color: #000000;
 	text-align: left;
 	display: inline-block;
@@ -538,6 +539,7 @@ li {
 }
 
 .type-pagination .page-mid {
+	color: #000000;
 	padding: 0px 2px;
 }
 
@@ -554,6 +556,13 @@ li {
 	display: block;
 }
 
+.page-left{
+	color: #000000;
+}
+
+.page-right{
+	color: #000000;
+}
 
 /*视频看房*/
 
@@ -565,7 +574,7 @@ li {
 }
 
 .player-video-wrapper {
-	width: 100%;
+	width: 90%;
 	height: 557px;
 	background: black;
 	border: 0px solid darkgray;
@@ -629,7 +638,7 @@ li {
 	top: 150px;
 	left: 0;
 	right: 0;
-	width: 70%;
+	width: 55%;
 	height: 70%;
 }
 
@@ -644,9 +653,9 @@ li {
 .map-type {
 	width: 100%;
 	color: #fff;
-	height: 700px;
-	background: url('../img/location.jpg') no-repeat;
-	background-size: 100% 100%;
+	height: 750px;
+	/*background: url('../img/location.jpg') no-repeat;*/
+	/*background-size: 100% 100%;*/
 }
 
 .map-type-title {
@@ -687,7 +696,7 @@ li {
 }
 
 .md-contact .look-house-title {
-	padding: 40px 0 0px 140px;
+	padding: 60px 0 0px 140px;
 }
 
 .real-view .look-house-title {
@@ -869,18 +878,19 @@ li {
 	padding: 75px 75px;
 }
 
-.introduce h3 {
-	width: 30%;
+.introduce h4 {
+	width: 20%;
 	left: 50%;
 	transform: translate(-50%, 0);
 	text-align: center;
 	position: absolute;
-	top: 75px;
+	top: 55px;
 	color: #E1D270;
 	background-color: #1B1A1F;
 }
 
 .introduce p {
+	font-size: 16px;
 	color: white;
 	padding: 50px;
 	border: 1px solid #E1D270;
