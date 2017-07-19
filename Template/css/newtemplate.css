@@ -23,6 +23,17 @@ li {
 	list-style: none;
 }
 
+.top {
+	height: 50px;
+	background: black;
+}
+
+.top p {
+	width: 80%;
+	color: white;
+	line-height: 50px;
+}
+
 .nav-logo-container {
 	width: 100px;
 	padding-right: 100px;
@@ -30,7 +41,6 @@ li {
 
 .navbar {
 	background: white;
-	margin-bottom: 0px;
 }
 
 .main-wrap-width {
@@ -50,11 +60,17 @@ li {
 	border-bottom: 1px solid #333b48;
 }
 
-.navbar-header-g .navbar-brand {
+.navbar-header-g {
+	color: #cdd6df;
+}
+
+.navbar-brand {
+	padding: 0px;
 	color: #cdd6df;
 }
 
 .navbar-color {
+	color: black;
 	background: white;
 	font-size: 16px;
 }
@@ -77,6 +93,7 @@ li {
 
 .menu-container,
 .second-navbar {
+	height: 60px;
 	background: #fff;
 }
 
@@ -93,7 +110,12 @@ li {
 }
 
 .navbar-fontsize {
+	padding-top: 20px;
 	font-size: 30px;
+}
+
+.nav-padding {
+	padding-top: 25px;
 }
 
 .menu-container div {
@@ -105,6 +127,14 @@ li {
 	display: none;
 }
 
+.shadow-bg {}
+
+.share {
+	width: 100px;
+	background-color: #F8E53E;
+	float: right;
+}
+
 
 /*主要内容*/
 
@@ -112,7 +142,7 @@ li {
 	background: url(../img/page-main.jpg) no-repeat center center;
 	background-size: cover;
 	position: relative;
-	height: 700px;
+	height: 800px;
 }
 
 .with-bg-container {
@@ -122,7 +152,7 @@ li {
 .with-bg-3 {
 	position: absolute;
 	top: 35%;
-	width: 50%;
+	width: 40%;
 	margin-left: 75px;
 	height: 100px;
 	color: #000;
@@ -131,8 +161,7 @@ li {
 
 .street {
 	color: white;
-	line-height: 30px;
-	font-size: 25px;
+	font-size: 70px;
 	letter-spacing: 2px;
 }
 
@@ -144,7 +173,12 @@ li {
 
 .price {
 	color: white;
-	font-size: 20px;
+	font-size: 50px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .main-wrap {
@@ -190,7 +224,7 @@ li {
 
 .border {
 	background-color: #F8E53E;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	padding-left: 65px;
 	padding-right: 65px;
 	position: relative;
@@ -199,15 +233,22 @@ li {
 #myTab {
 	position: absolute;
 	z-index: 20;
-	width: 20%;
+	width: 30%;
 	left: 50%;
 	background-color: #F8E53E;
 	transform: translate(-50%, 0);
 }
 
+.nav-padding-top {
+	padding-top: 70px;
+}
+
+
+/*房源详情按钮大小*/
+
 .nav-pills li a {
-	padding: 4px 0px;
-	font-size: 14px;
+	padding: 15px 0px;
+	font-size: 18px;
 	background-color: #fff;
 	color: #000;
 }
@@ -220,7 +261,7 @@ li {
 }
 
 #myTabContent>div {
-	min-height: 350px;
+	min-height: 400px;
 	padding-top: 50px;
 	margin-top: 50px;
 	border: 1px solid #FFF;
@@ -241,6 +282,11 @@ li {
 
 .open li:last-child {
 	border: none;
+}
+
+.public {
+	font-size: 50px;
+	font-weight: bold;
 }
 
 
@@ -281,13 +327,17 @@ li {
 	font-size: 16px;
 }
 
+.tab-content {
+	padding-top: 50px;
+}
+
 
 /*公众开放日*/
 
 .public-open-days {
 	background: url(../img/bg-01.jpg);
 	position: relative;
-	height: 800px;
+	height: 750px;
 }
 
 .data-wrap {
@@ -323,6 +373,10 @@ li {
 	padding-top: 60px;
 	font-size: 20px;
 	color: white;
+}
+
+.list-wrap {
+	border-bottom: 1px solid #F5F5F5;
 }
 
 .list-wrap p span.add-on {
@@ -556,13 +610,14 @@ li {
 	display: block;
 }
 
-.page-left{
+.page-left {
 	color: #000000;
 }
 
-.page-right{
+.page-right {
 	color: #000000;
 }
+
 
 /*视频看房*/
 
@@ -651,8 +706,9 @@ li {
 /*地理位置*/
 
 .map-type {
-	width: 100%;
+	width: 95%;
 	color: #fff;
+	margin: 0 auto;
 	height: 750px;
 	/*background: url('../img/location.jpg') no-repeat;*/
 	/*background-size: 100% 100%;*/
@@ -925,6 +981,6 @@ li {
 }
 
 .page-scroll-mgrt {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 }

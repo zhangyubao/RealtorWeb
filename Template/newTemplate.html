@@ -21,21 +21,25 @@
 
 	<body id="r2177295">
 		<div class="container-fluid">
+			<div class="top text-center">
+				<p>ALFIE YANG &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone col-sm"></span>&nbsp;&nbsp;&nbsp; 778-680-6831</p>
+			</div>
 			<!-- 1 头部 -->
 			<nav class="navbar navbar-default-g">
-				<div class="navbar-center-g navbar-container">
-					<div class="menu-container page-scroll">
-						<button type="button" class="navbar-toggle navbar-bg-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">	<span class="sr-only">Toggle navigation</span>
+				<div>
+					<div class="page-scroll">
+						<button type="button" class="navbar-toggle navbar-bg-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">	
+						 <span class="sr-only">Toggle navigation</span>
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>
                     </button>
 						<a class="navbar-brand navbar-fontsize navbar-logo navbar-color" href="#body">
-							logo
+							<img src="img/logo-md.png" />
 						</a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="navbar-collapse navbar-ex1-collapse collapse navbar-collapse-g" aria-expanded="false" id="benefits">
+					<div class="navbar-collapse navbar-ex1-collapse collapse navbar-collapse-g nav-padding" aria-expanded="false" id="benefits">
 						<div class="menu-container">
 							<ul class="nav navbar-nav navbar-mglft menu-navbar">
 								<li class="page-scroll page-scroll-mgrt">
@@ -68,16 +72,18 @@
 								<li class="page-scroll page-scroll-mgrt">
 									<a href="#contact" class="navbar-color">PDF</a>
 								</li>
-
 							</ul>
 						</div>
 					</div>
 					<!-- /.navbar-collapse -->
 				</div>
+				<div class="share">
+
+				</div>
 				<!-- /.container -->
 			</nav>
 			<!--2 房源图 -->
-			<div id="descrption" class="container-fluid">
+			<div id="descrption" class="container-fluid shadow-bg">
 				<div class="with-bg-container">
 					<div class="container-fluid with-bg-2">
 						<div class="with-bg-3">
@@ -90,7 +96,7 @@
 			</div>
 
 			<div class="container-fluid border" id="solutions">
-				<ul id="myTab" class="nav nav-pills nav-justified" style="padding-top: 35px;">
+				<ul id="myTab" class="nav nav-pills nav-justified nav-padding-top">
 					<li class="active">
 						<a href="#desc" data-toggle="tab">房源描述</a>
 					</li>
@@ -98,14 +104,14 @@
 						<a href="#detail" data-toggle="tab">房源详情</a>
 					</li>
 				</ul>
-				<div id="myTabContent" class="tab-content" style="margin-top: 50px;">
+				<div id="myTabContent" class="tab-content">
 					<!--	<div>-->
 					<div class="tab-pane fade in active text-center desc" id="desc">
-						<p class="h4">房源描述</p>
+						<p class="title">房源描述</p>
 						<p class="text-left detail">为您呈现完美的4315平凡英尺，6房3.5卫豪华房源，它坐落在17580平方英尺的土地至上。首层提供一个完全开放的空间，包含宽敞的厨房、独立的中式厨房，空间宽敞的起居室以及一个封闭的露台。二层包含了5个卧室，其中两个含有独立卫浴。主卧提供了步入式衣橱和主卧卫浴。地下包含了游戏室，客卧，独立厨房，以及两个独立车库。 </p>
 					</div>
-					<div class="tab-pane fade text-center" id="detail" style="padding-top: 50px;">
-						<p class="h4">房源详情</p>
+					<div class="tab-pane fade text-center" id="detail">
+						<p class="title">房源详情</p>
 						<div class="row detail-list">
 							<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
 								<div>
@@ -186,17 +192,18 @@
 			</div>
 			<!--公众开放日-->
 			<div class="container-fluid" id="openday">
-				<div class="row" style="padding:30px 0">
+				<div class="row" style="padding:40px 0">
 					<div class="col-lg-3 open">
-						<p class="open-day">公众开放日</p>
+						<div class="open-day">
+							<p class="public">公众</p>开放日</div>
 						<span class="glyphicon glyphicon-calendar add-mgrt" aria-hidden="true"></span>
 						<div>
 							<ul class="list-group">
 								<li class="data-mgtop">
-									<div class="list-wrap">
+									<span class="list-wrap">
 										<p class="add-on-1">2016年2月17日 星期六</p>
 										<p class="add-time-1 text-left">11:00-16:00</p>
-									</div>
+									</span>
 								</li>
 								<li class="data-mgtop">
 									<div class="list-wrap">
@@ -310,11 +317,13 @@
 				<div class="iframe-view"><iframe src="demo.html"></iframe></div>
 			</div>
 			<!-- 9地理位置 -->
-			<div class="map-type" id="location">
-				<div class="map-type-title">
-					<h3 class="data-text-pdtop" style="color: white;">
+			<div>
+				<div class="map-type" id="location">
+					<div class="map-type-title">
+						<h3 class="data-text-pdtop" style="color: white;">
 							地理位置
 					</h3>
+					</div>
 				</div>
 			</div>
 			<!-- 10 联系经纪 -->

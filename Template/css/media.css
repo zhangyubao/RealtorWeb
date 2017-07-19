@@ -136,7 +136,7 @@
 @media (min-width: 1200px) {  
     /*在大于1200像素的屏幕里,这里的样式才生效*/  
     .navbar-mglft{
-        width: 85%;
+        width: 90%;
 		margin-right:0px;
 		float: right;
     }
