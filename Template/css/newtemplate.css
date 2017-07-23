@@ -976,8 +976,9 @@ li {
 
 .main-pic {
 	padding-top: 80px;
+	background-size: cover;
 	background: url(../img/page-main.jpg);
-}
+} 
 
 .main-pic p {
 	font-size: 40px;
@@ -1034,6 +1035,12 @@ li {
 	float: left;
 }
 
+.footer-right img{
+	width: 80px;
+	height: 30px;
+	margin-top: 10px;
+}
+
 .footer .footer-left>div {
 	margin-left: 60px;
 }
@@ -1041,4 +1048,10 @@ li {
 .page-scroll-mgrt {
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.indetor{
+	color: red;
+    background: transparent;
+    border: 0;
 }
