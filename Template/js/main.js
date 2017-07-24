@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	//	var mls = $('body').attr('id').value;
+	t_dn = $(".img-item")
 	var mls = 'r2177295';
 	var opendayUri = 'http://www.yujiahao.cn/sp/get/openhouse/';
 	var housepic = 'http://www.yujiahao.cn/sp/get/imgs/';
@@ -15,15 +16,25 @@ $(document).ready(function() {
 			}
 		});
 	//房源图片
+
 	$.get(housepic, {
 			"mls": mls
 		},
 		function(data, status) {
 			var open = eval(data);
+			var container = $('#itemContainer');
 			for(var i = 1; i <= open.length; i++) {
-				$('.list-group-pic').find('#house-pic-' + i).attr('src', open[i - 1].img);
-				$('.list-group-pic').find('#house-pic-' + i).attr('data-info', open[i - 1].desc);
+				var node_dn = t_dn.clone();
+				node_dn.find('img').attr('src', open[i-1].img);
+				container.append(node_dn);
 			}
+			
+			$("div.holder").jPages({
+				containerID: "itemContainer",
+				previous: "＜",
+				next: "＞",
+				perPage: 9
+			});
 		});
 
 	$('#submit').onclick = function() {
@@ -213,7 +224,7 @@ function commitdata() {
 		'desc': desc
 	}, function(data, status) {
 		alert(data);
-	},function(error){
+	}, function(error) {
 		alert(error);
 	});
 }

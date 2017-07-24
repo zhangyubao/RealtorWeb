@@ -139,12 +139,12 @@ li {
 	margin-top: 20px;
 }
 
-.share-icon{
+.share-icon {
 	position: absolute;
 	top: 40%;
 }
 
-.share-icon a{
+.share-icon a {
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -158,9 +158,8 @@ li {
 	background-size: cover;
 	position: relative;
 	height: 800px;
-	box-shadow: -5px 20px 41px rgba(0,0,0,0.4);
+	box-shadow: -5px 20px 41px rgba(0, 0, 0, 0.4);
 }
-
 
 .with-bg-container {
 	position: relative;
@@ -420,40 +419,48 @@ li {
 
 
 /*房源图片*/
-
+.house-wrap{
+	min-height: 1300px;
+}
 .house-wrap h3 {
 	padding: 90px 0px;
 }
-.public-show{
+
+.public-show {
 	float: left;
 	margin-right: 15px;
 	width: 20%;
 }
-.public-show img{
+
+.public-show img {
 	width: 100%;
 	height: 100%;
 }
-.middles{
-	width:50%;
+
+.middles {
+	width: 50%;
 }
-.public-title{
+
+.public-title {
 	font-size: 24px;
 	font-weight: bold;
 	color: black;
 }
-.middles h5{
+
+.middles h5 {
 	font-weight: bold;
 	font-size: 26px;
 	color: black;
 	padding-top: 5px;
 }
 
-.middles p{
+.middles p {
 	font-size: 16px;
 	color: #898989;
 	line-height: 25px;
 	width: 27%;
 }
+
 .list-pic-width {
 	width: 24%;
 	display: inline-block;
@@ -475,12 +482,12 @@ li {
 	padding-right: 5px;
 	width: 100%;
 	cursor: pointer;
-	
 }
-.list-group-pic{
+
+.list-group-pic {
 	padding-left: 75px;
 	padding-right: 75px;
-	box-shadow: 0 -40px 40px rgba(248,247,233,0.3);
+	box-shadow: 0 -40px 40px rgba(248, 247, 233, 0.3);
 }
 
 .list-group p {
@@ -509,7 +516,7 @@ li {
 .list-group-pic .col-md-4,
 .list-group-pic .col-sm-6,
 .list-group-pic .col-xs-6 {
-	height: 300px;
+	height: 400px;
 	padding: 1px 1px 1px 1px;
 }
 
@@ -670,6 +677,7 @@ li {
 	color: #000000;
 }
 
+
 /*视频看房*/
 
 #video-01 {
@@ -687,8 +695,8 @@ li {
 }
 
 .video-type {
-	　background-size:cover;
-	background: url(../img/page-main.jpg) 100% 100%;
+	background-size: cover;
+	background-image: url(../img/page-main.jpg);
 }
 
 .video-type .data-text-pdtop {
@@ -738,16 +746,16 @@ li {
 
 .real-view .iframe-view {
 	position: absolute;
-    margin: auto;
-    /* top: 150px; */
-    left: 0;
-    right: 0;
-    width: 65%;
-    height: 80%;
+	margin: auto;
+	/* top: 150px; */
+	left: 0;
+	right: 0;
+	width: 65%;
+	height: 80%;
 }
 
 .iframe-view iframe {
-	 border: 3px solid white;
+	border: 3px solid white;
 	height: 100%;
 	width: 100%;
 }
@@ -852,13 +860,15 @@ li {
 	z-index: -90;
 }
 
-.icon-color{
+.icon-color {
 	color: #8796A6;
 }
-.text-right{
+
+.text-right {
 	font-size: 16px;
 	color: #8796A6;
 }
+
 .contact-wrap {
 	padding: 0px;
 }
@@ -975,10 +985,11 @@ li {
 }
 
 .main-pic {
+	min-height: 1500px;
 	padding-top: 80px;
 	background-size: cover;
-	background: url(../img/page-main.jpg);
-} 
+	background-image: url(../img/page-main.jpg);
+}
 
 .main-pic p {
 	font-size: 40px;
@@ -1035,7 +1046,7 @@ li {
 	float: left;
 }
 
-.footer-right img{
+.footer-right img {
 	width: 80px;
 	height: 30px;
 	margin-top: 10px;
@@ -1050,8 +1061,61 @@ li {
 	padding-right: 20px;
 }
 
-.indetor{
+.indetor {
 	color: red;
-    background: transparent;
-    border: 0;
+	background: transparent;
+	border: 0;
+}
+
+#content-pic {
+	width: 100%;
+}
+
+.holder {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.holder a {
+	font-size: 40px;
+	cursor: pointer;
+	margin: 0 5px;
+	color: gray;
+	padding: 2px 5px;
+}
+
+.holder a:hover {
+	border: 0px solid transparent;
+	color: black;
+}
+
+.holder a.jp-previous {
+	margin-right: 15px;
+}
+
+.holder a.jp-next {
+	margin-left: 15px;
+}
+
+.holder a.jp-current,
+a.jp-current:hover {
+	border: 0px solid transparent;
+	color: black;
+}
+
+.holder a.jp-disabled,
+a.jp-disabled:hover {
+	color: black;
+}
+
+.holder a.jp-current,
+a.jp-current:hover,
+.holder a.jp-disabled,
+a.jp-disabled:hover {
+	cursor: none;
+	background: transparent;
+}
+
+.holder span {
+	margin: 0 5px;
 }

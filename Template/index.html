@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/newtemplate.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
 	</head>
 
 	<body id="r2177295">
@@ -243,14 +245,20 @@
 				</div>
 			</div>
 			<!-- 5 房源照片 -->
-			<div class="container-fluid main-pic" id="pricing">
+			<div class="main-pic container-fluid" id="pricing">
 				<div class="house-wrap">
 					<p class="text-center">
 						房源照片
 					</p>
 					<div class="list-group-pic">
-						<div class="row">
-							<div class="col-md-4 col-xs-12 col-lg-4 col-sm-6 target">
+						<div class="row clearfix">
+							<div id="content-pic" class="defaults">
+								<!-- item container -->
+								<ul id="itemContainer">
+									
+								</ul>
+							</div>
+							<!--<div class="col-md-4 col-xs-12 col-lg-4 col-sm-6 target">
 								<img id='house-pic-0' src='img/bg-01.jpg' data-info='test pic' data-toggle="modal" data-target="#myModal" onclick="showPicInfo(this);" />
 							</div>
 							<div class="col-md-4 col-xs-12 col-lg-4 col-sm-6 target">
@@ -269,12 +277,13 @@
 							<div class="col-md-4 col-xs-12 col-lg-4 col-sm-6 target">
 								<img id='house-pic-7' src='img/bg-01.jpg' data-info='' data-toggle="modal" data-target="#myModal" onclick="showPicInfo(this);" /></div>
 							<div class="col-md-4 col-xs-12 col-lg-4 col-sm-6 target mb-none">
-								<img id='house-pic-8' src='img/bg-01.jpg' data-info='' data-toggle="modal" data-target="#myModal" onclick="showPicInfo(this);" /></div>
+								<img id='house-pic-8' src='img/bg-01.jpg' data-info='' data-toggle="modal" data-target="#myModal" onclick="showPicInfo(this);" />
+							</div>-->
 						</div>
 					</div>
 				</div>
-				<div class='type-pagination'>
-					<ul class="pagination pagination-lg">
+				<div class='holder'>
+					<!--<ul class="pagination pagination-lg">
 						<li>
 							<a class="indetor" href="#0" style="background: transparent; color: #000; border: 0; font-size: 30px;">&lt;</a>
 						</li>
@@ -290,7 +299,7 @@
 						<li>
 							<a class="indetor" href="#0" style="background: transparent; color: #000; border: 0;font-size: 30px;">&gt;</a>
 						</li>
-					</ul>
+					</ul>-->
 				</div>
 			</div>
 			<div class="container-fluid">
@@ -550,11 +559,15 @@
 				</div>
 			</div>
 		</div>
+		
+		<div style="display: none;">
+			<li class="img-item col-md-4 col-xs-12 col-lg-4 col-sm-6"><img src="" alt="image"></li>
+		</div>
 	</body>
 	<script src='js/jquery-2.1.4.min.js'></script>
 	<script src='js/bootstrap.min.js'></script>
 	<script src='js/main.js'></script>
 	<script type="text/javascript" src="js/location.js"></script>
 	<script type="text/javascript" src="http://maps.google.cn/maps/api/js?key=AIzaSyA1wj36Jr6W46WQ1JpQsoQZxHMQm5pEQDs"></script>
-
+	<script type="text/javascript" src="js/jPages.js"></script>
 </html>
