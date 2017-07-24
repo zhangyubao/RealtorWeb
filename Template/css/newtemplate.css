@@ -370,6 +370,7 @@ li {
 
 .data-mgtop {
 	width: 53%;
+	padding-bottom: 20px;
 	padding-top: 20px;
 	border-bottom: 1px solid #A8A8A8;
 }
@@ -421,9 +422,11 @@ li {
 
 
 /*房源图片*/
-.house-wrap{
+
+.house-wrap {
 	min-height: 1300px;
 }
+
 .house-wrap h3 {
 	padding: 90px 0px;
 }
@@ -1123,6 +1126,6 @@ a.jp-disabled:hover {
 	margin: 0 5px;
 }
 
-#itemContainer{
-	margin-top:0px
+#itemContainer {
+	margin-top: 0px
 }
