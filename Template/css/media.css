@@ -1,5 +1,31 @@
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
     /*在小于768像素的屏幕里,这里的样式才生效*/
+    /* header mobile phone style*/
+     .top{
+       display: none;
+     }
+     .navbar button{
+       float: left;
+     }
+     .navbar-ex1-collapse{
+       display: none;
+     }
+     .nav-container{
+       position: fixed;
+       top:0;
+       z-index: 9;
+       background: rgba(255,255,255,0);
+     }
+     .nav-container .navbar{
+       background: rgba(255,255,255,0);
+
+     }
+     .share-container{
+       display: none;
+     }
+     /* house descrption */
+     
+    /*video mobile phone style*/
     #video-01{
 		width: 300px!important;
 		height: 300px;
@@ -82,13 +108,13 @@
     .with-bg-02{
     height: 820px;
 }
-}  
-@media (min-width: 768px) and (max-width: 991px) {  
-    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/
     .navbar-mglft{
 		margin:0px auto;
 		float: right;
-    } 
+    }
     .page-scroll-mgrt{
     	margin-right: 10px;
     }
@@ -105,13 +131,13 @@
     .navbar-display{
 		display: none;
     }
-}  
-@media (min-width: 992px) and (max-width: 1199px) {  
-    /*在992和1199像素之间的屏幕里,这里的样式才生效*/ 
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/
     .navbar-mglft{
 		margin:0px auto;
 		float: right;
-    } 
+    }
     .page-scroll-mgrt{
     	margin-right: 20px;
     }
@@ -132,9 +158,9 @@
     .navbar-display{
 		display: none;
     }
-}  
-@media (min-width: 1200px) {  
-    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+}
+@media (min-width: 1200px) {
+    /*在大于1200像素的屏幕里,这里的样式才生效*/
     .navbar-mglft{
         width: 90%;
 		margin-right:0px;
@@ -159,4 +185,4 @@
     .navbar-display{
 		display: none;
     }
-}  
+}
