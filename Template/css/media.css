@@ -1,188 +1,306 @@
 @media (max-width: 767px) {
-    /*在小于768像素的屏幕里,这里的样式才生效*/
-    /* header mobile phone style*/
-     .top{
-       display: none;
-     }
-     .navbar button{
-       float: left;
-     }
-     .navbar-ex1-collapse{
-       display: none;
-     }
-     .nav-container{
-       position: fixed;
-       top:0;
-       z-index: 9;
-       background: rgba(255,255,255,0);
-     }
-     .nav-container .navbar{
-       background: rgba(255,255,255,0);
-
-     }
-     .share-container{
-       display: none;
-     }
-     /* house descrption */
-     
-    /*video mobile phone style*/
-    #video-01{
-		width: 300px!important;
-		height: 300px;
-		background: red;
-    }
-    .video-player{
-    	width: 100%;
-		min-width: 300px;
-
-    }
-    .list-pic-width{
-		width: 100%;
-		margin-bottom: 10px;
-    }
-    .list-house-width{
-		width: 100%;
-		margin:0;
-    }
-    .player-video-wrapper{
-		height: 300px;
-    }
-    .outdoor-scene{
-		width: 100%;
-    }
-    .carousel-group-g{
-    	height: 200px;
-    }
-    .list-mg-0{
-    	margin-bottom: 10px;
-    }
-    .md-contact{
-	display: none;
-	}
-	.main-wrap-pdtop{
-		padding-top: 30px;
-	}
-	.text-txt{
-		margin-bottom: 30px;
-	}
-	.navbar-logo{
-	margin-left:-12px;
-
-	}
-	.navbar-mglft{
-		margin-left:0px;
-		}
-	.navbar-collapse-g{
-		width: 100%;
-	}
-	.xs-contact{
-		margin:20px auto;
-	}
-	.navbar-bg-toggle .icon-bar{
-		background: #a6a9bb;
-	}
-	.navbar-display-none{
-		display: none;
-	}
-	.navbar-txt-mglf{
-		margin-left: 10px;
-	}
-	.navbar-display{
-		display:block;
-	}
-	.map-type{
-		padding-bottom:0px;
-	}
-	.list-house-width{
-		margin-bottom: 10px;
-	}
-    .with-bg-2{
-        position: relative;
-        height: 250px!important;
-    }
-    .with-bg-3{
-        height: 200px;
-        position: absolute;
-        top: 20px;
-    }
-    .with-bg-02{
+  html, body, .body-container, #descrption, #solutions, #openday, #pricing, #videos, .real-view, .map, .xs-contact {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  .data-text-pdtop {
+    font-size: 28px!important;
+  }
+  /*在小于768像素的屏幕里,这里的样式才生效*/
+  /* header mobile phone style*/
+  .top {
+    display: none;
+  }
+  .navbar button {
+    float: left;
+  }
+  .nav-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-ex1-collapse {
+    display: none;
+  }
+  .nav-container {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background: rgba(255, 255, 255, 0);
+  }
+  .nav-container .navbar {
+    background: rgba(255, 255, 255, 0);
+  }
+  .navbar .navbar-collapse {
+    padding: 0 0 0 0;
+  }
+  .navbar-logo {
+    display: none;
+  }
+  .navbar .navbar-collapse ul {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
+  .navbar .navbar-collapse li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .share-container {
+    display: none;
+  }
+  /* house descrption */
+  .shadow-bg {}
+  #descrption {
+    height: 100%;
+  }
+  .with-bg-2 {
+    position: relative;
+    z-index: 0;
+  }
+  .with-bg-3 {
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .with-bg-3 p {
+    font-size: 40px;
+  }
+  .with-bg-3 .address {
+    font-size: 14px;
+  }
+  .with-bg-3 .price {
+    font-size: 30px;
+  }
+  .with-bg-02 {
     height: 820px;
+  }
+  /* solutions*/
+  #solutions {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #solutions #myTab {
+    width: 80%;
+    text-align: center;
+    z-index: 0;
+    padding-top: 40px;
+  }
+  #myTab li {
+    width: 40%;
+    display: inline-block;
+  }
+  .tab-content {
+    height: 90%;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 60px;
+    padding-top: 0px;
+  }
+  #myTabContent #detail span {
+    display: inline-block;
+    float: left;
+    width: 28%;
+    margin-left: 1%;
+  }
+  #myTabContent #detail div p {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    width: 70%;
+    font-size: 12px;
+    margin-right: 1%;
+  }
+  #myTabContent #detail span {
+    font-size: 12px;
+  }
+  /*house picture*/
+  .main-pic {
+    min-height: 0px;
+    overflow: hidden;
+  }
+  .main-pic .house-wrap {
+    min-height: 0;
+  }
+  .list-group-pic li img {
+    height: 100px;
+  }
+  /*video mobile phone style*/
+  .main-video {
+    height: 100%;
+  }
+  .main-video .data-text-pdtop {
+    margin-top: 30%!important;
+  }
+  #video-01 {
+    width: 300px!important;
+    height: 300px;
+    background: red;
+  }
+  .video-player {
+    width: 100%;
+    min-width: 300px;
+  }
+  .list-pic-width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .list-house-width {
+    width: 100%;
+    margin: 0;
+  }
+  .player-video-wrapper {
+    height: 300px;
+  }
+  .outdoor-scene {
+    width: 100%;
+  }
+  .carousel-group-g {
+    height: 200px;
+  }
+  .list-mg-0 {
+    margin-bottom: 10px;
+  }
+  .md-contact {
+    display: none;
+  }
+  .main-wrap-pdtop {
+    padding-top: 30px;
+  }
+  .text-txt {
+    margin-bottom: 30px;
+  }
+  .navbar-logo {
+    margin-left: -12px;
+  }
+  .navbar-mglft {
+    margin-left: 0px;
+  }
+  .navbar-collapse-g {
+    width: 100%;
+  }
+  .map {
+    overflow: hidden;
+  }
+  /* contact*/
+  #contactUl li {
+    display: inline-block;
+    width: 40%;
+  }
+  .xs-contact {
+    margin: 20px auto;
+  }
+  .navbar-bg-toggle .icon-bar {
+    background: #fff;
+  }
+  .navbar-display-none {
+    display: none;
+  }
+  .navbar-txt-mglf {
+    margin-left: 10px;
+  }
+  .navbar-display {
+    display: block;
+  }
+  .map-type {
+    padding-bottom: 0px;
+  }
+  .list-house-width {
+    margin-bottom: 10px;
+  }
 }
-}
+
 @media (min-width: 768px) and (max-width: 991px) {
-    /*在768和991像素之间的屏幕里,这里的样式才生效*/
-    .navbar-mglft{
-		margin:0px auto;
-		float: right;
-    }
-    .page-scroll-mgrt{
-    	margin-right: 10px;
-    }
-    .navbar-mglft{
-    	margin-left: 0;
-    }
-    .menu-navbar{
-    	width: 76%;
-    	height: 40px;
-    	overflow: hidden;
-
-    }
-    .xs-contact{display: none;}
-    .navbar-display{
-		display: none;
-    }
+  /*在768和991像素之间的屏幕里,这里的样式才生效*/
+  .navbar-mglft {
+    margin: 0px auto;
+    float: right;
+  }
+  .page-scroll-mgrt {
+    margin-right: 10px;
+  }
+  .navbar-mglft {
+    margin-left: 0;
+  }
+  .menu-navbar {
+    width: 76%;
+    height: 40px;
+    overflow: hidden;
+  }
+  .xs-contact {
+    display: none;
+  }
+  .navbar-display {
+    display: none;
+  }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-    /*在992和1199像素之间的屏幕里,这里的样式才生效*/
-    .navbar-mglft{
-		margin:0px auto;
-		float: right;
-    }
-    .page-scroll-mgrt{
-    	margin-right: 20px;
-    }
-    .xs-contact{display: none;}
-    .list-group-house .list-house-width{
-		margin-right: 30px;
-    }
-    .list-group-house .list-house-width:last-child{
-    	margin-right: 0;
-    }
-    .map-type{
-    	margin-bottom: 60px;
-    }
-    .map-wrap {
-    	width: 87%;
-    	margin-bottom: 60px;
-    }
-    .navbar-display{
-		display: none;
-    }
+  /*在992和1199像素之间的屏幕里,这里的样式才生效*/
+  .navbar-mglft {
+    margin: 0px auto;
+    float: right;
+  }
+  .page-scroll-mgrt {
+    margin-right: 20px;
+  }
+  .xs-contact {
+    display: none;
+  }
+  .list-group-house .list-house-width {
+    margin-right: 30px;
+  }
+  .list-group-house .list-house-width:last-child {
+    margin-right: 0;
+  }
+  .map-type {
+    margin-bottom: 60px;
+  }
+  .map-wrap {
+    width: 87%;
+    margin-bottom: 60px;
+  }
+  .navbar-display {
+    display: none;
+  }
 }
-@media (min-width: 1200px) {
-    /*在大于1200像素的屏幕里,这里的样式才生效*/
-    .navbar-mglft{
-        width: 90%;
-		margin-right:0px;
-		float: right;
-    }
-    .navbar-mglft{
-	margin-left:0px;
 
-	}
-	.xs-contact{display: none;}
-	.map-wrap {
-    	width: 65%;
-    	margin-bottom: 60px;
-    }
-    .item-center{
-    	height: 422px;
-    }
-    .item-center img{
-		margin:0 auto;
-		height: 100%!important;
-    }
-    .navbar-display{
-		display: none;
-    }
+@media (min-width: 1200px) {
+  /*在大于1200像素的屏幕里,这里的样式才生效*/
+  .navbar-mglft {
+    width: 90%;
+    margin-right: 0px;
+    float: right;
+  }
+  .navbar-mglft {
+    margin-left: 0px;
+  }
+  .xs-contact {
+    display: none;
+  }
+  .map-wrap {
+    width: 65%;
+    margin-bottom: 60px;
+  }
+  .item-center {
+    height: 422px;
+  }
+  .item-center img {
+    margin: 0 auto;
+    height: 100%!important;
+  }
+  .navbar-display {
+    display: none;
+  }
 }

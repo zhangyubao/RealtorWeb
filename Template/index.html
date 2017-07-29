@@ -15,19 +15,19 @@
 </head>
 
 <body id="r2177295">
-	<div class="container-fluid">
+	<div class="container-fluid body-container">
 		<div class="top text-center">
 			<p>ALFIE YANG &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone col-sm"></span>&nbsp;&nbsp;&nbsp; 778-680-6831</p>
 		</div>
 		<!-- 1 头部 -->
-		<div class="row">
-			<div class="col-lg-10 nav-container">
+		<div class="row nav-row">
+			<div class="col-lg-10 col-sm-12 col-xs-12 nav-container">
 				<nav class="navbar navbar-default-g">
 					<div class="page-scroll">
 						<button type="button" class="navbar-toggle navbar-bg-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		                         <span class="icon-bar">-</span>
-		                         <span class="icon-bar">-</span>
-		                         <span class="icon-bar">-</span>
+		                         <span class="icon-bar"></span>
+		                         <span class="icon-bar"></span>
+		                         <span class="icon-bar"></span>
            </button>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -90,6 +90,10 @@
 			</div>
 		</div>
 		<!--2 房源图 -->
+
+
+
+
 		<div id="descrption" class="container-fluid shadow-bg">
 			<div class="with-bg-container">
 				<div class="container-fluid with-bg-2">
@@ -197,6 +201,8 @@
 				<!--	</div>-->
 			</div>
 		</div>
+
+
 		<!--公众开放日-->
 		<div class="container-fluid" id="openday">
 			<div class="row" style="padding:40px 0">
@@ -330,7 +336,7 @@
 			<div class="iframe-view"><iframe src="demo.html"></iframe></div>
 		</div>
 		<!-- 9地理位置 -->
-		<div>
+		<div class="map">
 			<div class="map-type" id="location">
 				<div class="map-type-title">
 					<h3 class="data-text-pdtop" style="color: white;">
@@ -438,55 +444,66 @@
 							<div class='main-wrap-width'></div>
 					</h3>
 			</div>
-			<div class="container">
+			<ul id="contactUl" class="nav nav-pills nav-justified nav-padding-top">
+				<li class="active">
+					<a href="#oversea" data-toggle="tab">Contact1</a>
+				</li>
+				<li>
+					<a href="#domestic" data-toggle="tab">Contact2</a>
+				</li>
+			</ul>
 
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<a href="#" class="thumbnail">
+			<div class="container tab-content">
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tab-pane fade in active" id="oversea">
+					<div>
+						<a href="#" class="thumbnail">
 							<img data-src="#" alt="" src="img/man.jpg">
 						</a>
-					<div class="caption">
-						<div class="contact-page">
-							<h5 class="text-left">张帅</h5>
-							<h6 class="text-left">海外经纪人</h6>
-						</div>
-						<div class="contact-address">
-							<div class="contact-border">
-								<span class="glyphicon glyphicon-earphone icon-color" aria-hidden="true"></span>
-								<p class="contact-width text-right">604.561.5353
-								</p>
+						<div class="caption">
+							<div class="contact-page">
+								<h5 class="text-left">张帅</h5>
+								<h6 class="text-left">海外经纪人</h6>
 							</div>
-							<div class="contact-border">
-								<span class="glyphicon glyphicon-envelope icon-color" aria-hidden="true"></span>
-								<p class="contact-width text-right">Nick@nickneacsu.com
-								</p>
+							<div class="contact-address">
+								<div class="contact-border">
+									<span class="glyphicon glyphicon-earphone icon-color" aria-hidden="true"></span>
+									<p class="contact-width text-right">604.561.5353
+									</p>
+								</div>
+								<div class="contact-border">
+									<span class="glyphicon glyphicon-envelope icon-color" aria-hidden="true"></span>
+									<p class="contact-width text-right">Nick@nickneacsu.com
+									</p>
+								</div>
+								<div class="contact-border">
+									<span class="glyphicon glyphicon-globe icon-color" aria-hidden="true"></span>
+									<p class="contact-width text-right">http://www.nickneacsu.com
+									</p>
+								</div>
 							</div>
-							<div class="contact-border">
-								<span class="glyphicon glyphicon-globe icon-color" aria-hidden="true"></span>
-								<p class="contact-width text-right">http://www.nickneacsu.com
-								</p>
-							</div>
-						</div>
 
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form-wrap">
+						<form action="" method="POST" role="form" class="main-wrap-pdtop">
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-name" placeholder="姓名" required="required">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-email" placeholder="邮箱" required="required">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-tel" placeholder="手机号" required="required">
+							</div>
+							<div class="form-group">
+								<textarea name="" id="contact-input" class="form-control" required="required"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary btn-" id="submit" onclick="commitdata()">提交</button>
+						</form>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form-wrap">
-					<form action="" method="POST" role="form" class="main-wrap-pdtop">
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact-name" placeholder="姓名" required="required">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact-email" placeholder="邮箱" required="required">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact-tel" placeholder="手机号" required="required">
-						</div>
-						<div class="form-group">
-							<textarea name="" id="contact-input" class="form-control" required="required"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary btn-" id="submit" onclick="commitdata()">提交</button>
-					</form>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-wrap-pdtop">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-wrap-pdtop tab-pane fade " id="domestic">
 					<a href="#" class="thumbnail">
 							<img data-src="#" alt="" src="img/woman.jpg">
 						</a>
