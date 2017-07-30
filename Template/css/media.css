@@ -143,6 +143,17 @@
   .main-video .data-text-pdtop {
     margin-top: 30%!important;
   }
+  .main-video .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-video .player-video-wrapper {
+    width: 100%;
+    border: 0px;
+  }
+  .player-video-wrapper {
+    height: 300px;
+  }
   #video-01 {
     width: 300px!important;
     height: 300px;
@@ -152,6 +163,15 @@
     width: 100%;
     min-width: 300px;
   }
+  /* real */
+  .real-view .real-view-title {
+    padding-top: 35%
+  }
+  .real-view .iframe-view {
+    width: 95%;
+    height: 40%;
+  }
+  /* */
   .list-pic-width {
     width: 100%;
     margin-bottom: 10px;
@@ -159,9 +179,6 @@
   .list-house-width {
     width: 100%;
     margin: 0;
-  }
-  .player-video-wrapper {
-    height: 300px;
   }
   .outdoor-scene {
     width: 100%;
@@ -172,11 +189,91 @@
   .list-mg-0 {
     margin-bottom: 10px;
   }
+  .map {
+    overflow: hidden;
+  }
+  /* contact*/
   .md-contact {
     display: none;
   }
+  #contactUl {
+    padding-top: 0;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  #contactUl li {
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    border-radius: 0;
+    margin: 0 0 0 0;
+  }
+  .nav-justified>li {
+    float: left;
+  }
+  .xs-contact {
+    background: #f4f4f4;
+  }
+  #contactUl a {
+    background: #afacac;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0;
+  }
+  #contactUl .active a {
+    background: #337ab7;
+  }
+  .xs-contact .tab-content {
+    margin-top: 10px;
+  }
+  .thumbnail {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+  .thumbnail>img {
+    height: 150px;
+  }
   .main-wrap-pdtop {
     padding-top: 30px;
+  }
+  .contact-page h5 {
+    margin-top: 0;
+  }
+  .contact-page h6 {
+    font-size: 12px;
+  }
+  #domestic {
+    padding-top: 0px;
+  }
+  #oversea, #domestic {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-border {
+    margin: 5px 0;
+  }
+  .xs-contact .tab-content form {
+    padding-top: 10px;
+  }
+  .xs-contact .caption {
+    width: 70%;
+    margin: 0px auto;
+  }
+  .xs-contact .form-group {
+    margin-bottom: 10px;
+  }
+  .xs-contact input {
+    border-radius: 0;
+    height: 25px;
+  }
+  .xs-contact #contact-input {
+    background: #fff;
+  }
+  .xs-contact textarea {
+    background: #fff;
   }
   .text-txt {
     margin-bottom: 30px;
@@ -189,17 +286,6 @@
   }
   .navbar-collapse-g {
     width: 100%;
-  }
-  .map {
-    overflow: hidden;
-  }
-  /* contact*/
-  #contactUl li {
-    display: inline-block;
-    width: 40%;
-  }
-  .xs-contact {
-    margin: 20px auto;
   }
   .navbar-bg-toggle .icon-bar {
     background: #fff;
