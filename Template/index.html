@@ -38,7 +38,7 @@
 								</a>
 							<ul class="nav navbar-nav navbar-mglft menu-navbar">
 								<li class="page-scroll page-scroll-mgrt">
-									<a href="#benefits" class="navbar-color">首页</a>
+									<a href="#descrption" class="navbar-color">首页</a>
 								</li>
 								<li class="page-scroll page-scroll-mgrt">
 									<a href="#solutions" class="navbar-color">房屋描述</a>
@@ -50,7 +50,7 @@
 									<a href="#pricing" class="navbar-color">房源照片</a>
 								</li>
 								<li class="page-scroll page-scroll-mgrt">
-									<a href="#openday" class="navbar-color">公众开房日</a>
+									<a href="#openday" class="navbar-color">公众开放日</a>
 								</li>
 								<li class="page-scroll page-scroll-mgrt">
 									<a href="#videos" class="navbar-color">视频看房</a>
@@ -62,10 +62,13 @@
 									<a href="#location" target="_blank" class="navbar-color">地理位置</a>
 								</li>
 								<li class="page-scroll page-scroll-mgrt">
-									<a href="#contact" class="navbar-color">联系经纪</a>
+									<a href="#xscontact" class="navbar-color">联系经纪</a>
 								</li>
 								<li class="page-scroll page-scroll-mgrt">
-									<a href="#contact" class="navbar-color">PDF</a>
+									<a href="#introduce" class="navbar-color">介绍</a>
+								</li>
+								<li class="page-scroll page-scroll-mgrt">
+									<a href="#" class="navbar-color">PDF</a>
 								</li>
 							</ul>
 						</div>
@@ -104,6 +107,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="to-next" id="tosolutions">∨</div>
 		</div>
 
 		<div class="container-fluid border" id="solutions">
@@ -200,6 +204,7 @@
 				</div>
 				<!--	</div>-->
 			</div>
+			<div class="to-next" id="toopenday">∨</div>
 		</div>
 
 
@@ -246,8 +251,26 @@
 					<div class="public-show">
 						<img src="img/bg-01.jpg">
 					</div>
+					<div class="xs-pic-container">
+						<ul class="xs-pic" id="xsopenday">
+							<li class="xs-public-show">
+								<img src="img/bg-01.jpg" />
+							</li>
+							<li class="xs-public-show">
+								<img src="img/page-main.jpg">
+								<h5>WATRERS EDGE CRESCENT<span class="middles-search"></span></h5>
+								<p>为你呈现完美的4315平方英尺,6房3.5卫豪华房源，它坐落在17580平方英尺的土地上</p>
+							</li>
+							<li class="xs-public-show">
+								<img src="img/bg-01.jpg">
+							</li>
+
+						</ul>
+						<div class="openday-page"></div>
+					</div>
 				</div>
 			</div>
+			<div class="to-next" id="topricing">∨</div>
 		</div>
 		<!-- 5 房源照片 -->
 		<div class="main-pic container-fluid" id="pricing">
@@ -259,7 +282,11 @@
 					<div class="row clearfix">
 						<div id="content-pic" class="defaults">
 							<!-- item container -->
-							<ul id="itemContainer">
+
+							<ul id="itemContainer" class="md-pic">
+
+							</ul>
+							<ul id="xsitemContainer" class="xs-pic">
 
 							</ul>
 						</div>
@@ -285,6 +312,8 @@
 						</li>
 					</ul>-->
 			</div>
+			<div class="xs-holder"></div>
+			<div class="to-next" id="tovideos">∨</div>
 		</div>
 		<div class="container-fluid">
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -308,7 +337,7 @@
 			</div>
 		</div>
 		<!--7 视频看房-->
-		<div class="video-type" id="videos" id="videos">
+		<div class="video-type" id="videos">
 			<div class="main-video">
 				<div class="container">
 					<p class="text-center data-text-pdtop" style="margin-top: 30px;">
@@ -323,7 +352,7 @@
 
 				</div>
 			</div>
-
+			<div class="to-next" id="tofvideos">∨</div>
 		</div>
 		<!-- 8 实景看房-->
 		<div class="real-view" id="fvideos">
@@ -334,16 +363,20 @@
 			</div>
 			<img src='./img/real.jpg' />
 			<div class="iframe-view"><iframe src="demo.html"></iframe></div>
+			<div class="to-next" id="tomap">∨</div>
+
 		</div>
 		<!-- 9地理位置 -->
 		<div class="map">
-			<div class="map-type" id="location">
-				<div class="map-type-title">
-					<h3 class="data-text-pdtop" style="color: white;">
-							地理位置
-					</h3>
-				</div>
+			<div class="map-type-title">
+				<h3 class="data-text-pdtop" style="color: white;">
+						地理位置
+				</h3>
 			</div>
+			<div class="map-type" id="location">
+
+			</div>
+			<div class="to-next" id="tocontact">∨</div>
 		</div>
 		<!-- 10 联系经纪 -->
 		<div class="md-contact" id="contact">
@@ -437,7 +470,7 @@
 			</div>
 		</div>
 		<!-- 联系经纪人 -->
-		<div class="xs-contact">
+		<div class="xs-contact" id="xscontact">
 			<div class="main-wrap-pdtop">
 				<h3 class="text-center ">
 							联系经纪
@@ -509,18 +542,18 @@
 						</a>
 					<div class="caption">
 						<div class="contact-page">
-							<h5 class="text-left">张帅</h5>
-							<h6 class="text-left">海外经纪人</h6>
+							<h5 class="text-center">张帅</h5>
+							<h6 class="text-center">海外经纪人</h6>
 						</div>
 						<div class="contact-address">
 							<div class="contact-border">
 								<span class="glyphicon glyphicon-earphone icon-color" aria-hidden="true"></span>
-								<p class="contact-width text-right">604.561.5353
+								<p class="contact-width text-center">604.561.5353
 								</p>
 							</div>
 							<div class="contact-border">
 								<span class="glyphicon glyphicon-envelope icon-color" aria-hidden="true"></span>
-								<p class="contact-width text-right">Nick@nickneacsu.com
+								<p class="contact-width text-center">Nick@nickneacsu.com
 								</p>
 							</div>
 						</div>
@@ -535,8 +568,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="to-next" id="tointroduce">∨</div>
 		</div>
-		<div class="introduce">
+		<div class="introduce" id="introduce">
 			<h4>温哥华房产咨询 投资置业 商业地产项目专家</h4>
 			<p>Alfie Yang杨琼是温哥华顶尖Angel & Hasman地产公司的一名优异的地产经纪，具备了从事房地产服务行业的独特敏锐眼光，透彻的分析精神和充满激情的工作态度。她最关注的是有效的沟通和满足客户的需求。通过专业精湛的知识和丰富的多层的经验，无论在出售您的物业或帮助您购买自住及投资物业的过程中，提供真诚、巧妙和翔实的服务 凭借多年的坚实的生意背景，Alfie Yang杨琼在商务谈判、商业推广以及综合网络营销方面拥有丰富的经验。具备专业角度、锲而不舍和追求卓越细节服务的精神，Alfie在豪华房地产方面表现尤其突出，得到了客户的信赖和不断支持。房地产投资对于您好您的家人都是一次中重要的决定，她的目标就是让您做出明智的选择,为您的资产投资达到最带化。
 			</p>
@@ -561,9 +595,11 @@
 </body>
 <script src='js/jquery-2.1.4.min.js'></script>
 <script src='js/bootstrap.min.js'></script>
-<script src='js/main.js'></script>
+<script src="js/main.js"></script>
+
 <script type="text/javascript" src="js/location.js"></script>
 <script type="text/javascript" src="http://maps.google.cn/maps/api/js?key=AIzaSyA1wj36Jr6W46WQ1JpQsoQZxHMQm5pEQDs"></script>
 <script type="text/javascript" src="js/jPages.js"></script>
+<script src="js/next.js"></script>
 
 </html>

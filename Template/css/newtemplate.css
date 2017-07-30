@@ -669,6 +669,10 @@ li {
   color: #000000;
 }
 
+.xs-pic ，.xs-holder {
+  display: none;
+}
+
 
 /*视频看房*/
 
