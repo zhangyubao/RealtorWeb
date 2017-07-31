@@ -1,14 +1,16 @@
 $(document).ready(function() {
   var mls = $('body').attr('id').value;
-	var openDayUri = 'http://www.yujiahao.cn/sp/get/openhouse/';
-	var housePic = 'http://www.yujiahao.cn/sp/get/imgs/';
-	var contact = 'http://www.yujiahao.cn/sp/call/agent/';
+  var openDayUri = 'http://www.yujiahao.cn/sp/get/openhouse/';
+  var housePic = 'http://www.yujiahao.cn/sp/get/imgs/';
+  var contact = 'http://www.yujiahao.cn/sp/call/agent/';
   //公众开放日ajax
   $.ajax({
     type: 'GET',
     url: 'http://www.yujiahao.cn/sp/get/openhouse/',
     dataType: 'json/application',
-    data:{'mls':mls},
+    data: {
+      'mls': mls
+    },
     success: function(res) {
       var opendays = res.data;
       for (var i in opendays) {
