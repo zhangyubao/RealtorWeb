@@ -1,14 +1,31 @@
 (function($) {
+	//获取当前房源的出售状态,设置不同的状态背景图
+	var flag = $('body').attr('saled');
+	if(flag == "no") {
+		imgsrc = "img/oval.png";
+	} else {
+		imgsrc = "img/combined.png";
+	}
+	
 	$.fn.mapmarker = function(center, price, address, zoom) {
-		var opts = $.extend({}, $.fn.mapmarker.defaults, { "center": center, "price": price, "address": address, "zoom": zoom });
+		var opts = $.extend({}, $.fn.mapmarker.defaults, {
+			"center": center,
+			"price": price,
+			"address": address,
+			"zoom": zoom
+		});
 		return this.each(function() {
 			var map_element = this;
 			addMapMarker(map_element, opts.center, opts.price, opts.address, opts.zoom);
 		});
 	};
-
 	//默认值  地图中心、价格、地址、缩放倍数
-	$.fn.mapmarker.defaults = { "center": "Vancouver", "price": '0', "address": "Vancouver", "zoom": 10 };
+	$.fn.mapmarker.defaults = {
+		"center": "Vancouver",
+		"price": '0',
+		"address": "Vancouver",
+		"zoom": 10
+	};
 
 	//创建标记
 	function addMapMarker(map_element, center, price, address, zoom) {
@@ -19,7 +36,9 @@
 		var map = new google.maps.Map(map_element, myOptions);
 		var geocoder = new google.maps.Geocoder();
 		var locationLa;
-		geocoder.geocode({ 'address': center }, function(results, status) {
+		geocoder.geocode({
+			'address': center
+		}, function(results, status) {
 			if(status == google.maps.GeocoderStatus.OK) {
 				locationLa = results[0].geometry.location;
 				map.setCenter(locationLa);
@@ -31,9 +50,10 @@
 		google.maps.event.addListener(map, 'zoom_changed', function() {
 			map.setCenter(locationLa);
 		});
-		
-		
-		geocoder.geocode({ "address": address }, function(results, status) {
+
+		geocoder.geocode({
+			"address": address
+		}, function(results, status) {
 			if(status == 'OK') {
 				var latitude = results[0].geometry.location.lat();
 				var longitude = results[0].geometry.location.lng();
@@ -43,7 +63,7 @@
 					position: new google.maps.LatLng(latitude, longitude),
 					animation: google.maps.Animation.DROP,
 					icon: {
-						url: "img/combined.png", //地图标记点图片
+						url: imgsrc, //地图标记点图片
 					},
 					label: {
 						fontFamily: 'STKaiti',
