@@ -1,16 +1,12 @@
 (function($) {
 	//获取当前房源的出售状态,设置不同的状态背景图
-	var imgsrc;
-	var id = document.getElementsByTagName("body")[0].getAttribute('id');
-	var flag = document.getElementById(id).saled;
-	if(flag == "" || flag == null) {
-		flag = document.getElementById(id).getAttribute('saled');
-	}
+	var flag = $('body').attr('saled');
 	if(flag == "no") {
 		imgsrc = "img/oval.png";
 	} else {
 		imgsrc = "img/combined.png";
 	}
+	
 	$.fn.mapmarker = function(center, price, address, zoom) {
 		var opts = $.extend({}, $.fn.mapmarker.defaults, {
 			"center": center,
