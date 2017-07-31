@@ -39,6 +39,6 @@ $("#tomap").click(function() {
 
 $("#tocontact").click(function() {
   $("html,body").animate({
-    scrollTop: $("#contact").offset().top
+    scrollTop: $("#xscontact").offset().top
   }, 300);
 });

@@ -7,6 +7,10 @@ body {
   padding: 0 0 0 0;
 }
 
+.to-next, .xs-pic-container, .xs-pic {
+  display: none;
+}
+
 .small-header {
   position: fixed;
   top: 0;

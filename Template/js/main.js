@@ -4,16 +4,19 @@ $(document).ready(function() {
   var mls = 'r2177295';
   var opendayUri = 'http://www.yujiahao.cn/sp/get/openhouse/';
   var housepic = 'http://www.yujiahao.cn/sp/get/imgs/';
+  var phoneWidth = document.documentElement.clientWidth;
   var phoneHeight = document.documentElement.clientHeight;
-  $('#descrption').css('height', phoneHeight);
-  $('#solutions').css('height', phoneHeight);
-  $('#openday').css('height', phoneHeight);
-  $('#pricing').css('height', phoneHeight);
-  $('#videos').css('height', phoneHeight);
-  $('.real-view').css('height', phoneHeight);
-  $('.map').css('height', phoneHeight);
-  $('.introduce').css('height', phoneHeight);
-
+  if (phoneWidth < 768) {
+    $('#descrption').css('height', phoneHeight);
+    $('#solutions').css('height', phoneHeight);
+    $('#openday').css('height', phoneHeight);
+    $('#pricing').css('height', phoneHeight);
+    $('#videos').css('height', phoneHeight);
+    $('.real-view').css('height', phoneHeight);
+    $('.map').css('height', phoneHeight);
+    $('#xscontact').css('height', phoneHeight);
+    $('.introduce').css('height', phoneHeight);
+  }
   $.get(opendayUri, {
       "mls": mls
     },
@@ -31,7 +34,7 @@ $(document).ready(function() {
     },
     function(data, status) {
       var open = eval(data);
-      var container = $('#xsitemContainer');
+      var container = $('#itemContainer');
       var xscontainer = $('#xsitemContainer');
       for (var i = 1; i <= open.length; i++) {
         var node_dn = t_dn.clone();
@@ -45,8 +48,8 @@ $(document).ready(function() {
       }
       $("div.holder").jPages({
         containerID: "itemContainer",
-        previous: "",
-        next: "＞",
+        previous: "〈",
+        next: "〉",
         perPage: 9
       });
       $("div.xs-holder").jPages({

@@ -7,7 +7,7 @@
   .data-text-pdtop {
     font-size: 28px!important;
   }
-  .xs-pic, .xs-holder {
+  .xs-pic, .xs-holder, .xs-pic-container {
     display: block;
   }
   .md-pic, .holder {
@@ -23,6 +23,7 @@
     right: 0;
     margin: 0px auto;
     cursor: pointer;
+    display: block;
   }
   .to-next:hover {
     color: #337ab7;
