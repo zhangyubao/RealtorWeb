@@ -4,6 +4,9 @@
     margin: 0;
     overflow: hidden;
   }
+  html {
+    overflow-y: hidden!important;
+  }
   .data-text-pdtop {
     font-size: 28px!important;
   }
