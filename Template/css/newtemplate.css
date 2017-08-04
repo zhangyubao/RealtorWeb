@@ -1,3 +1,5 @@
+/*通用部分*/
+
 body {
   font-size: 20px;
   overflow-x: hidden;
@@ -7,15 +9,8 @@ body {
   padding: 0 0 0 0;
 }
 
-.to-next, .xs-pic-container {
+.to-next, .xs-pic-container, .xs-pic {
   display: none;
-}
-
-.small-header {
-  position: fixed;
-  top: 0;
-  z-index: 90;
-  width: 100%;
 }
 
 h3 {
@@ -27,15 +22,62 @@ li {
   list-style: none;
 }
 
+.pc-none {
+  display: none;
+}
+
+
+/*黑色顶部*/
+
+.small-header {
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  width: 100%;
+}
+
 .top {
-  height: 50px;
   background: black;
+  height: 38px;
 }
 
 .top p {
-  width: 80%;
+  width: 100%;
   color: white;
-  line-height: 50px;
+  display: inline-block;
+  padding-left: 30%;
+  text-align: left;
+  font-size: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+
+/*白色导航*/
+
+.nav-row {
+  height: 87px;
+}
+
+.nav-row .navbar {
+  background: white;
+  margin-bottom: 0px;
+}
+
+.nav-container {
+  width: 85%;
+  display: inline-block;
+}
+
+.share-container {
+  height: 100%;
+  width: 15%;
+  display: inline-block;
+}
+
+.nav-row .navbar-collapse {
+  padding-left: 29px;
+  padding-right: 0;
 }
 
 .nav-logo-container {
@@ -43,8 +85,40 @@ li {
   padding-right: 100px;
 }
 
-.navbar {
-  background: white;
+.menu-container, .second-navbar {
+  height: 60px;
+  background: #fff;
+}
+
+.menu-container, .second-navbar {
+  height: 83px;
+  background: #fff;
+}
+
+.page-scroll-mgrt {
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 34px 20px;
+}
+
+.page-scroll-mgrt a {
+  padding: 0 0 0 0!important;
+}
+
+.navbar-fontsize {
+  margin-top: 0;
+  display: inline;
+  width: 10%;
+  margin-top: 15px;
+  color: #cdd6df;
+}
+
+.navbar-mglft {
+  width: 90%;
+  margin-right: 0px;
+  float: right;
 }
 
 .main-wrap-width {
@@ -68,16 +142,9 @@ li {
   color: #cdd6df;
 }
 
-.navbar-brand {
-  margin-top: 10px;
-  padding: 0px;
-  color: #cdd6df;
-}
-
 .navbar-color {
   color: black;
   background: white;
-  font-size: 16px;
 }
 
 .navbar-display-none {
@@ -96,30 +163,12 @@ li {
   color: #fff;
 }
 
-.menu-container, .second-navbar {
-  height: 60px;
-  background: #fff;
-}
-
 .main-nav-g li a.navbar-white:hover {
   background: transparent;
 }
 
-.navbar-logo {
-  margin-left: 75px;
-}
-
 .navbar-mglft {
   float: left;
-}
-
-.navbar-fontsize {
-  padding-top: 20px;
-  font-size: 30px;
-}
-
-.nav-padding {
-  padding-top: 25px;
 }
 
 .menu-container div {
@@ -127,29 +176,22 @@ li {
   float: left;
 }
 
-.menu-container .pc-none {
-  display: none;
-}
-
-.shadow-bg {}
-
 .share {
   margin-right: 20px;
   width: 100%;
-  height: 60px;
+  height: 58px;
   background-color: #F5E43C;
   float: right;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .share-icon {
-  position: absolute;
-  top: 50%;
+  display: flex;
 }
 
 .share-icon a {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 18px auto;
+  color: #000;
 }
 
 
@@ -1054,11 +1096,6 @@ li {
 
 .footer .footer-left>div {
   margin-left: 60px;
-}
-
-.page-scroll-mgrt {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .indetor {
