@@ -6,9 +6,10 @@
   }
   html {
     overflow-y: hidden!important;
+    font-size: calc(100vw/4.14);
   }
   .data-text-pdtop {
-    font-size: 28px!important;
+    font-size: 0.28rem!important;
   }
   .xs-pic, .xs-holder, .xs-pic-container {
     display: block;
@@ -18,9 +19,9 @@
   }
   .to-next {
     position: absolute;
-    bottom: 0;
-    width: 50px;
-    font-size: 40px;
+    bottom: 0.11rem;
+    width: 0.30rem;
+    font-size: 0.4rem;
     color: rgba(255, 255, 255, 0.7);
     left: 0;
     right: 0;
@@ -41,6 +42,7 @@
   .nav-row {
     margin-left: 0;
     margin-right: 0;
+    height: 0px;
   }
   .navbar-collapse.in {
     overflow-y: visible;
@@ -56,6 +58,19 @@
     padding-left: 0;
     padding-right: 0;
     background: rgba(255, 255, 255, 0);
+  }
+  .menu-container {
+    background: rgba(0, 0, 0, 0.7)!important;
+  }
+  .navbar .navbar-collapse ul {}
+  .navbar .navbar-collapse ul li {
+    padding: 0 0 0 0;
+    height: 0.5rem;
+  }
+  .navbar .navbar-collapse ul li a {
+    background: rgba(0, 0, 0, 0.7);
+    line-height: 0.5rem;
+    color: #fff;
   }
   .nav-container .navbar {
     background: rgba(255, 255, 255, 0);
@@ -80,6 +95,10 @@
   }
   /* house descrption */
   .shadow-bg {}
+  .with-bg-container .street {
+    font-size: 0.49rem;
+    line-height: 0.6rem;
+  }
   #descrption {
     height: 100%;
     position: relative;
@@ -89,23 +108,25 @@
     z-index: 0;
   }
   .with-bg-3 {
-    height: 200px;
+    height: 2rem;
+    left: 0.26rem;
     position: absolute;
-    top: 20%;
+    top: 1.38rem;
     width: 100%;
-    margin-left: 5%;
   }
   .with-bg-3 p {
     font-size: 40px;
   }
   .with-bg-3 .address {
-    font-size: 14px;
+    font-size: 0.085rem;
   }
   .with-bg-3 .price {
-    font-size: 30px;
+    font-size: 0.27rem;
   }
-  .with-bg-02 {
-    height: 820px;
+  .with-bg-container .address {
+    margin-top: 0.38rem;
+    margin-bottom: 0.1rem;
+    color: #fff;
   }
   /* solutions*/
   #solutions {
@@ -118,18 +139,32 @@
     width: 80%;
     text-align: center;
     z-index: 0;
-    padding-top: 40px;
+    padding-top: 0.64rem;
   }
   #myTab li {
     width: 49%;
     display: inline-block;
   }
+  .tab-content .detail {
+    line-height: 0.39rem;
+    font-size: 0.12rem;
+  }
   .tab-content {
-    height: 90%;
-    width: 90%;
+    height: 5.9rem;
+    width: 100%;
     margin: 0px auto;
-    margin-top: 60px;
-    padding-top: 0px;
+    padding-top: 0px!important;
+    margin-top: 0.79rem;
+    padding-left: 0.23rem;
+    padding-right: 0.23rem;
+  }
+  .border #desc .detail {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  #myTabContent>div {
+    padding-top: 0.5rem;
+    height: 100%;
   }
   #myTabContent #detail span {
     display: inline-block;
@@ -142,11 +177,15 @@
     float: right;
     text-align: right;
     width: 70%;
-    font-size: 12px;
+    font-size: 0.14rem;
     margin-right: 1%;
   }
   #myTabContent #detail span {
-    font-size: 12px;
+    font-size: 0.14rem;
+  }
+  .border #detail .row .col-md-4 {
+    margin-bottom: 0.15rem;
+    padding: 0 0 0 0;
   }
   /* openday*/
   #openday {
@@ -176,22 +215,34 @@
   .xs-pic-container {
     position: relative;
   }
+  .xs-public-show h5 {
+    font-weight: bold;
+    font-size: 0.19rem;
+    padding-left: 0.21rem;
+    padding-right: 0.21rem;
+  }
+  .xs-public-show p {
+    font-size: 0.13rem;
+    padding-left: 0.21rem;
+    padding-right: 1.5rem;
+    color: #949292;
+  }
   .xs-public-show {
     width: 100%;
-    height: 300px;
+    height: 3rem;
   }
   .xs-public-show img {
-    height: 240px;
+    height: 2.96rem;
     width: 100%;
   }
   .openday-page {
     position: absolute;
     text-align: center;
-    top: 180px;
+    top: 2.36rem;
     width: 100%;
   }
   .openday-page a {
-    font-size: 60px;
+    font-size: 0.6rem;
     text-decoration: none;
     color: #f4f4f4;
   }
@@ -207,20 +258,35 @@
   #pricing {
     position: relative;
   }
+  .public {
+    font-size: 0.33rem;
+    font-weight: bold;
+    margin: 0 0 0 0;
+  }
+  .open-day p, .main-pic p {
+    font-size: 0.33rem;
+    line-height: 0.33rem;
+  }
+  .main-pic p {
+    padding-bottom: 0.3rem!important;
+    margin-bottom: 0;
+  }
   .main-pic {
-    min-height: 0px;
+    padding-top: 0.7rem!important;
     overflow: hidden;
   }
   .main-pic .house-wrap {
     min-height: 0;
   }
   .list-group-pic {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 0.33rem;
+    padding-right: 0.33rem;
     margin-bottom: 10px;
   }
   .list-group-pic li img {
     height: 75%;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
   }
   .list-group-pic .col-sm-6, .list-group-pic .col-xs-6 {
     height: 75%;
@@ -236,6 +302,9 @@
     color: #f4f4f4;
     border: 0;
     text-decoration: none;
+  }
+  .xs-pic {
+    margin-top: 0;
   }
   .xs-holder a:visited {
     color: #f4f4f4;
@@ -257,12 +326,19 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .video-type .data-text-pdtop {
+    padding-top: 0.69rem;
+    font-size: 0.25rem!important;
+    padding-bottom: 0.69rem;
+  }
   .main-video .player-video-wrapper {
     width: 100%;
     border: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .player-video-wrapper {
-    height: 300px;
+    height: 3rem;
   }
   #video-01 {
     width: 300px!important;
@@ -280,7 +356,9 @@
   .map-type-title {
     position: absolute;
     width: 100%;
-    top: 0;
+    height: 0.25rem;
+    font-size: 0.25rem;
+    top: 0.49rem;
   }
   .map-type-title h3 {
     color: #000!important;
@@ -345,15 +423,16 @@
   }
   #contactUl a {
     background: #afacac;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
     border-radius: 0;
+    margin-bottom: 0;
   }
   #contactUl .active a {
     background: #337ab7;
   }
   .xs-contact .tab-content {
-    margin-top: 1%;
+    margin-top: 0;
   }
   .thumbnail {
     background-color: transparent;
@@ -365,27 +444,49 @@
     width: 40%;
   }
   .main-wrap-pdtop {
-    padding-top: 30px;
+    padding-top: 0.45rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.25rem;
+  }
+  .xs-contact .contact-page h5 {
+    font-size: 0.16rem;
+    color: #425362;
+    margin-top: 0.12rem;
+  }
+  .xs-contact .form-wrap {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .xs-contact .form-wrap input {
+    height: 0.23rem;
+    margin-bottom: 0.1rem;
+  }
+  .xs-contact .form-wrap form {
+    padding-bottom: 0;
+  }
+  .xs-contact .form-wrap .btn {
+    border-radius: 0;
+    width: 0.8rem;
   }
   .contact-page h5 {
     margin-top: 0;
   }
   .contact-page h6 {
-    font-size: 12px;
+    font-size: 0.12rem;
   }
   #domestic {
     padding-top: 0px;
   }
   .nav-pills li a {
-    padding: 10px 0px;
-    font-size: 14px;
+    padding: 0.1rem 0px;
+    font-size: 0.14rem;
   }
   #oversea, #domestic {
     padding-left: 0;
     padding-right: 0;
   }
   .contact-border {
-    margin: 5px 0;
+    margin: 0 0;
   }
   .xs-contact {
     position: relative;
@@ -403,9 +504,12 @@
   .xs-contact .form-group {
     margin-bottom: 1%;
   }
+  .xs-contact .icon-color {
+    font-size: 0.12rem;
+  }
   .xs-contact input {
     border-radius: 0;
-    height: 25px;
+    height: 0.12rem;
   }
   .xs-contact #contact-input {
     background: #fff;
@@ -413,9 +517,15 @@
   .xs-contact textarea {
     background: #fff;
   }
+  .xs-contact .contact-width {
+    width: 90%;
+    font-size: 0.1rem;
+    margin-bottom: 0;
+    text-align: right;
+  }
   /* introduce*/
   .introduce p {
-    padding: 7 0px 30px;
+    padding: 0.7rem 0.3rem;
     height: 100%;
     overflow: scroll;
     letter-spacing: 5px;
@@ -427,9 +537,16 @@
   .introduce h4 {
     display: block;
     position: absolute;
-    left: 35%;
-    top: 50px;
-    width: 50%;
+    top: 0.5rem;
+    width: 100%;
+    padding-left: 0.24rem;
+    padding-right: 2.4rem;
+    text-align: left;
+    font-size: 0.16rem;
+  }
+  .introduce p {
+    font-size: 0.12rem;
+    line-height: 0.39rem;
   }
   .text-txt {
     margin-bottom: 30px;

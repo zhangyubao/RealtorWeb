@@ -110,7 +110,7 @@ li {
 .navbar-fontsize {
   margin-top: 0;
   display: inline;
-  width: 10%;
+  width: 8%;
   margin-top: 15px;
   color: #cdd6df;
 }
@@ -197,13 +197,16 @@ li {
 
 /*主要内容*/
 
+
+/*description*/
+
 .with-bg-2 {
+  box-shadow: -5px 20px 41px rgba(0, 0, 0, 0.4);
   z-index: 200;
   background: url(../img/page-main.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
   height: 800px;
-  box-shadow: -5px 20px 41px rgba(0, 0, 0, 0.4);
 }
 
 .with-bg-container {
@@ -212,34 +215,38 @@ li {
 
 .with-bg-3 {
   position: absolute;
-  top: 35%;
-  width: 40%;
-  margin-left: 75px;
-  height: 100px;
+  top: 237px;
+  left: 81px;
+  height: 326px;
   color: #000;
   text-align: left;
 }
 
-.street {
-  color: white;
-  font-size: 70px;
+.with-bg-container .street {
+  color: #fff;
+  font-size: 78px;
+  line-height: 78px;
+  margin-bottom: 2px;
   letter-spacing: 2px;
 }
 
-.address {
-  padding-top: 20px;
-  font-size: 20px;
-  color: white;
+.with-bg-container .address {
+  margin-top: 59px;
+  margin-bottom: 18px;
+  font-size: 19px;
+  color: #fff;
 }
 
-.price {
-  color: white;
-  font-size: 50px;
+.with-bg-container .price {
+  color: #fff;
+  font-size: 58px;
 }
+
+
+/*solutions*/
 
 .title {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 22px;
 }
 
 .main-wrap {
@@ -282,8 +289,8 @@ li {
 .border {
   background-color: #F8E53E;
   padding-bottom: 50px;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 54px;
+  padding-right: 54px;
   position: relative;
 }
 
@@ -297,11 +304,11 @@ li {
 }
 
 .nav-padding-top {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 
-/*房源详情按钮大小*/
+/*solutions 房源详情按钮大小*/
 
 .nav-pills li a {
   padding: 15px 0px;
@@ -315,6 +322,10 @@ li {
   background-color: #000;
 }
 
+.border .tab-content {
+  padding-top: 50px;
+}
+
 #myTabContent>div {
   min-height: 400px;
   padding-top: 50px;
@@ -326,34 +337,40 @@ li {
   margin-top: 100px;
 }
 
-.open {
-  padding-left: 75px;
+.border #desc, .border #detail {
+  margin-top: 13px;
 }
 
-.open li {
-  margin-right: 70px;
-}
-
-.open li:last-child {
-  border: none;
-}
-
-.public {
-  font-size: 50px;
-  font-weight: bold;
+.border #desc .detail {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 
 /*房源详情*/
 
+.border #detail .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.border #detail .row .col-md-4 {
+  text-align: left;
+  padding-top: 0;
+  margin-bottom: 30px;
+  line-height: 16px;
+  color: #a4a4a4;
+}
+
+#detail .row .col-md-4 p {
+  margin: 0 0 0 0;
+}
+
 .detail-mid {
   border-left: 1px solid #6f6f6f;
   border-right: 1px solid #6f6f6f;
-}
-
-.detail-list .col-md-4 {
-  padding-top: 12px;
-  color: #a4a4a4;
 }
 
 .detail-list span {
@@ -381,12 +398,34 @@ li {
   font-size: 16px;
 }
 
-.tab-content {
-  padding-top: 50px;
-}
-
 
 /*公众开放日*/
+
+#openday {
+  height: 580px;
+}
+
+#openday .row {
+  padding-top: 92px;
+}
+
+.open {
+  padding-left: 6%;
+}
+
+.open li {
+  margin-right: 70px;
+}
+
+.open li:last-child {
+  border: none;
+}
+
+.public {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
 
 .public-open-days {
   background: url(../img/bg-01.jpg);
@@ -407,11 +446,24 @@ li {
   font-size: 1.4em;
 }
 
+#openday .col-lg-9 {
+  margin-top: 24px;
+}
+
+.list-group {
+  width: 80%;
+}
+
 .data-mgtop {
-  width: 53%;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #A8A8A8;
+}
+
+.data-mgtop p {
+  letter-spacing: 0px;
+  margin: 0 0 0 0;
 }
 
 .data-box {
@@ -451,6 +503,13 @@ li {
   font-size: 40px;
 }
 
+.public-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-top: -35px;
+}
+
 .main-two-mgtop {
   margin-top: 50px;
 }
@@ -459,36 +518,10 @@ li {
   margin-top: 90px;
 }
 
-
-/*房源图片*/
-
-.house-wrap {
-  min-height: 1300px;
-}
-
-.house-wrap h3 {
-  padding: 90px 0px;
-}
-
 .public-show {
   float: left;
   margin-right: 15px;
   width: 20%;
-}
-
-.public-show img {
-  width: 100%;
-  height: 100%;
-}
-
-.middles {
-  width: 50%;
-}
-
-.public-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
 }
 
 .middles h5 {
@@ -498,11 +531,27 @@ li {
   padding-top: 5px;
 }
 
+.middles {
+  width: 50%;
+}
+
 .middles p {
-  font-size: 16px;
+  font-size: 14px;
   color: #898989;
   line-height: 25px;
-  width: 27%;
+  width: 45%;
+}
+
+.public-show img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*房源图片*/
+
+.house-wrap h3 {
+  padding: 90px 0px;
 }
 
 .list-pic-width {
@@ -520,9 +569,7 @@ li {
 }
 
 .list-pic-width div img, .list-group-pic img {
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px 10px 10px 10px;
   width: 100%;
   cursor: pointer;
 }
@@ -534,7 +581,7 @@ li {
 }
 
 .list-group p {
-  font-size: 18px;
+  font-size: 16px;
   color: #A8A8A8;
 }
 
@@ -557,7 +604,7 @@ li {
 }
 
 .list-group-pic .col-md-4, .list-group-pic .col-sm-6, .list-group-pic .col-xs-6 {
-  height: 400px;
+  height: 240px;
   padding: 1px 1px 1px 1px;
 }
 
@@ -602,6 +649,23 @@ li {
 
 
 /*房源户型图*/
+
+.main-pic {
+  padding-top: 165px;
+  background-size: cover;
+  background-image: url(../img/page-main.jpg);
+}
+
+.main-pic p {
+  font-size: 66px;
+  padding-bottom: 65px;
+  color: #fff;
+  line-height: 66px;
+}
+
+.house-wrap {
+  height: 870px;
+}
 
 .house-type {
   position: relative;
@@ -726,25 +790,29 @@ li {
 }
 
 .player-video-wrapper {
-  height: 800px;
-  background: black;
-  border: 3px solid #FFF;
+  height: 600px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 
 .video-type {
   background-size: cover;
   background-image: url(../img/page-main.jpg);
+  height: 850px;
 }
 
 .video-type .data-text-pdtop {
-  color: white;
-  font-size: 40px;
+  color: #fff;
+  font-size: 47px;
   padding-bottom: 20px;
+  padding-top: 58px;
 }
 
 .main-video {
   background: rgba(0, 0, 0, 0.7);
+  height: 100%;
 }
 
 .main-video .container {
@@ -772,7 +840,8 @@ li {
 }
 
 .real-view-title {
-  padding-top: 50px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .real-view .main-wrap-width-white {
@@ -786,10 +855,14 @@ li {
   position: absolute;
   margin: auto;
   /* top: 150px; */
-  left: 0;
-  right: 0;
-  width: 65%;
-  height: 80%;
+  width: 100%;
+  height: 75%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.real-view .look-house-title {
+  font-size: 47px;
 }
 
 .iframe-view iframe {
@@ -804,25 +877,33 @@ li {
 .map {
   position: relative;
   width: 100%;
+  height: 448px;
 }
 
 .map-type {
-  width: 95%;
+  width: 100%;
   color: #fff;
   margin: 0 auto;
-  height: 750px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   /*background: url('../img/location.jpg') no-repeat;*/
   /*background-size: 100% 100%;*/
 }
 
 .map-type-title {
+  position: absolute;
+  left: 3%;
+  top: 24px;
   height: 178px;
+  z-index: 1;
 }
 
 .map-type-title h3 {
-  padding: 80px;
   color: #080808!important;
   text-align: center;
+  font-size: 62px;
 }
 
 .map-type .main-wrap-width-white, .md-contact .main-wrap-width-white {
@@ -846,20 +927,23 @@ li {
   color: #000;
 }
 
+.md-contact .container {
+  width: 100%;
+  padding-left: 17%;
+  padding-right: 17%;
+  margin: 0 0 0 0;
+  padding-top: 80px;
+}
+
 .md-contact {
   background: #f6f6f6;
   padding-bottom: 50px;
-  /*height: 1220px;*/
+  height: 1200px;
 }
 
 .md-contact .look-house-title {
-  font-size: 70px;
-  padding-top: 50px;
+  font-size: 71px;
   font-weight: bold;
-}
-
-.real-view .look-house-title {
-  font-size: 40px;
 }
 
 .contact-width {
@@ -893,6 +977,21 @@ li {
   position: relative;
 }
 
+.md-contact .form-group input {
+  height: 40px;
+  margin-bottom: 14px;
+}
+
+.md-contact .form-group textarea {
+  background: #fff;
+}
+
+.md-contact .btn {
+  width: 110px;
+  border-radius: 0;
+  height: 40px;
+}
+
 .md-contact .contact-bg-pic {
   position: absolute;
   top: 0;
@@ -916,14 +1015,18 @@ li {
 }
 
 .contact-page h5 {
-  font-size: 22px;
+  font-size: 44px;
   color: #425362;
   margin-top: 25px;
 }
 
 .contact-page h6 {
-  font-size: 18px;
+  font-size: 22px;
   color: #b2bec5;
+}
+
+.md-contact .contact-wrap .col-md-4, .md-contact .contact-wrap .col-lg-4 {
+  padding-left: 0;
 }
 
 .contact-wrap {
@@ -955,21 +1058,24 @@ li {
   width: 100%;
   text-align: center;
   margin: 0px auto;
-  height: 290px;
+  height: 350px;
   margin-top: 40px;
+}
+
+.md-contact .contact-second .col-md-4, .md-contact .contact-second .col-lg-4 {
+  padding: 58px 0 0 0px;
 }
 
 .md-contact .contact-icon {
   text-align: left;
 }
 
-.md-contact .contact-second .content-title {
-  padding-top: 50px;
+.md-contact .contact-second h5 {
+  margin-top: 0;
 }
 
 .md-contact .contact-second .contact-icon img {
-  padding-top: 20px;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 
@@ -1026,40 +1132,30 @@ li {
   color: #fff;
 }
 
-.main-pic {
-  min-height: 1400px;
-  padding-top: 80px;
-  background-size: cover;
-  background-image: url(../img/page-main.jpg);
-}
-
-.main-pic p {
-  font-size: 40px;
-  padding-bottom: 20px;
-  color: white;
-}
-
 .introduce {
   position: relative;
   background-color: #1b1a1f;
   color: #fff;
-  padding: 75px 75px;
+  padding: 8% 8%;
+  height: 800px;
 }
 
 .introduce h4 {
-  width: 20%;
+  width: 60%;
   left: 50%;
+  font-size: 33px;
   transform: translate(-50%, 0);
   text-align: center;
   position: absolute;
-  top: 55px;
+  top: 75px;
   color: #E1D270;
   background-color: #1B1A1F;
 }
 
 .introduce p {
-  font-size: 16px;
-  color: white;
+  font-size: 22px;
+  color: #fff;
+  line-height: 64px;
   padding: 50px;
   border: 1px solid #E1D270;
 }
@@ -1067,11 +1163,14 @@ li {
 .footer {
   background: #353945;
   overflow: hidden;
-  padding: 30px 40px;
+  padding: 45px 5%;
+  height: 135px;
 }
 
 .footer p {
   color: #6E7D85;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 .footer .footer-left {
@@ -1083,15 +1182,12 @@ li {
 }
 
 .footer img {
-  width: 50px;
-  height: 50px;
+  height: 35px;
   float: left;
 }
 
 .footer-right img {
-  width: 80px;
-  height: 30px;
-  margin-top: 10px;
+  height: 35px;
 }
 
 .footer .footer-left>div {
@@ -1109,7 +1205,7 @@ li {
 }
 
 .holder {
-  margin: 15px 0;
+  margin: 80px 0 30px 0;
   text-align: center;
 }
 
@@ -1124,6 +1220,7 @@ li {
 .holder a:hover {
   border: 0px solid transparent;
   color: black;
+  text-decoration: none;
 }
 
 .holder a.jp-previous {
