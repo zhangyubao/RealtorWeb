@@ -99,8 +99,10 @@
 	/* house descrption */
 	.shadow-bg {}
 	.with-bg-container .street {
-		font-size: 0.49rem;
-		line-height: 0.6rem;
+		font-size: 0.4rem;
+		line-height: 0px;
+		line-height: 0.45rem;
+		transform: translateY(-50%)
 	}
 	#descrption {
 		height: 100%;
