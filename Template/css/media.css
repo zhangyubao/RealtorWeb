@@ -1,548 +1,668 @@
 @media (max-width: 767px) {
-  /*公用属性*/
-  body {
-    margin: 0;
-    overflow: hidden;
-  }
-  html {
-    overflow-y: hidden!important;
-  }
-  .data-text-pdtop {
-    font-size: 28px!important;
-  }
-  .xs-pic, .xs-holder, .xs-pic-container {
-    display: block;
-  }
-  .md-pic, .holder {
-    display: none;
-  }
-  .to-next {
-    position: absolute;
-    bottom: 0;
-    width: 50px;
-    font-size: 40px;
-    color: rgba(255, 255, 255, 0.7);
-    left: 0;
-    right: 0;
-    margin: 0px auto;
-    cursor: pointer;
-    display: block;
-  }
-  .to-next:hover {
-    color: #337ab7;
-  }
-  /* header mobile phone style*/
-  .top {
-    display: none;
-  }
-  .navbar button {
-    float: left;
-  }
-  .nav-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible;
-  }
-  .navbar-ex1-collapse {
-    display: none;
-  }
-  .nav-container {
-    position: fixed;
-    top: 0;
-    z-index: 9;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    background: rgba(255, 255, 255, 0);
-  }
-  .nav-container .navbar {
-    background: rgba(255, 255, 255, 0);
-  }
-  .navbar .navbar-collapse {
-    padding: 0 0 0 0;
-  }
-  .navbar-logo {
-    display: none;
-  }
-  .navbar .navbar-collapse ul {
-    display: block;
-    width: 100%;
-    margin-top: 0;
-  }
-  .navbar .navbar-collapse li {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .share-container {
-    display: none;
-  }
-  /* house descrption */
-  .shadow-bg {}
-  #descrption {
-    height: 100%;
-    position: relative;
-  }
-  .with-bg-2 {
-    position: relative;
-    z-index: 0;
-  }
-  .with-bg-3 {
-    height: 200px;
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    margin-left: 5%;
-  }
-  .with-bg-3 p {
-    font-size: 40px;
-  }
-  .with-bg-3 .address {
-    font-size: 14px;
-  }
-  .with-bg-3 .price {
-    font-size: 30px;
-  }
-  .with-bg-02 {
-    height: 820px;
-  }
-  /* solutions*/
-  #solutions {
-    width: 100%;
-    height: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #solutions #myTab {
-    width: 80%;
-    text-align: center;
-    z-index: 0;
-    padding-top: 40px;
-  }
-  #myTab li {
-    width: 49%;
-    display: inline-block;
-  }
-  .tab-content {
-    height: 90%;
-    width: 90%;
-    margin: 0px auto;
-    margin-top: 60px;
-    padding-top: 0px;
-  }
-  #myTabContent #detail span {
-    display: inline-block;
-    float: left;
-    width: 28%;
-    margin-left: 1%;
-  }
-  #myTabContent #detail div p {
-    display: inline-block;
-    float: right;
-    text-align: right;
-    width: 70%;
-    font-size: 12px;
-    margin-right: 1%;
-  }
-  #myTabContent #detail span {
-    font-size: 12px;
-  }
-  /* openday*/
-  #openday {
-    overflow: hidden;
-    position: relative;
-  }
-  #openday .row {
-    padding-top: 20%!important;
-    height: 100%;
-  }
-  #openday .col-lg-9 {
-    height: 40%;
-  }
-  .open {
-    padding-left: 10%;
-  }
-  .open .glyphicon, .open .list-group {
-    display: none;
-  }
-  .public-show {
-    width: 100%;
-    display: none;
-  }
-  #xsopenday {
-    height: 100%;
-  }
-  .xs-pic-container {
-    position: relative;
-  }
-  .xs-public-show {
-    width: 100%;
-    height: 300px;
-  }
-  .xs-public-show img {
-    height: 240px;
-    width: 100%;
-  }
-  .openday-page {
-    position: absolute;
-    text-align: center;
-    top: 180px;
-    width: 100%;
-  }
-  .openday-page a {
-    font-size: 60px;
-    text-decoration: none;
-    color: #f4f4f4;
-  }
-  .jp-current {
-    color: #337ab7!important;
-  }
-  .openday-page a:visited {
-    border: 0;
-    text-decoration: none;
-    color: #f4f4f4;
-  }
-  /*house picture*/
-  #pricing {
-    position: relative;
-  }
-  .main-pic {
-    min-height: 0px;
-    overflow: hidden;
-  }
-  .main-pic .house-wrap {
-    min-height: 0;
-  }
-  .list-group-pic {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 10px;
-  }
-  .list-group-pic li img {
-    height: 75%;
-  }
-  .list-group-pic .col-sm-6, .list-group-pic .col-xs-6 {
-    height: 75%;
-  }
-  .xs-holder {
-    text-align: center;
-  }
-  .xs-holder span {
-    display: none;
-  }
-  .xs-holder a {
-    font-size: 60px!important;
-    color: #f4f4f4;
-    border: 0;
-    text-decoration: none;
-  }
-  .xs-holder a:visited {
-    color: #f4f4f4;
-  }
-  .xs-holder .jp-current, .xs-holder .jp-current:hover {
-    color: #337ab7;
-  }
-  /*video mobile phone style*/
-  #videos {
-    position: relative;
-  }
-  .main-video {
-    height: 100%;
-  }
-  .main-video .data-text-pdtop {
-    margin-top: 30%!important;
-  }
-  .main-video .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .main-video .player-video-wrapper {
-    width: 100%;
-    border: 0px;
-  }
-  .player-video-wrapper {
-    height: 300px;
-  }
-  #video-01 {
-    width: 300px!important;
-    height: 300px;
-    background: red;
-  }
-  .video-player {
-    width: 100%;
-    min-width: 300px;
-  }
-  /* map*/
-  .map {
-    position: relative;
-  }
-  .map-type-title {
-    position: absolute;
-    width: 100%;
-    top: 0;
-  }
-  .map-type-title h3 {
-    color: #000!important;
-    text-align: center;
-  }
-  .map-type {
-    padding-bottom: 0px;
-    z-index: -1;
-  }
-  /* real */
-  .real-view .real-view-title {
-    padding-top: 35%
-  }
-  .real-view .iframe-view {
-    width: 95%;
-    height: 40%;
-  }
-  /* */
-  .list-pic-width {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .list-house-width {
-    width: 100%;
-    margin: 0;
-  }
-  .outdoor-scene {
-    width: 100%;
-  }
-  .carousel-group-g {
-    height: 200px;
-  }
-  .list-mg-0 {
-    margin-bottom: 10px;
-  }
-  .map {
-    overflow: hidden;
-  }
-  /* contact*/
-  .md-contact {
-    display: none;
-  }
-  #contactUl {
-    padding-top: 0;
-    display: inline-block;
-    width: 80%;
-    margin-left: 10%;
-  }
-  #contactUl li {
-    display: inline-block;
-    width: 50%;
-    height: 30px;
-    border-radius: 0;
-    margin: 0 0 0 0;
-  }
-  .nav-justified>li {
-    float: left;
-  }
-  .xs-contact {
-    background: #f4f4f4;
-    min-height: 100%;
-  }
-  #contactUl a {
-    background: #afacac;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 0;
-  }
-  #contactUl .active a {
-    background: #337ab7;
-  }
-  .xs-contact .tab-content {
-    margin-top: 1%;
-  }
-  .thumbnail {
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 1%;
-  }
-  .thumbnail>img {
-    width: 40%;
-  }
-  .main-wrap-pdtop {
-    padding-top: 30px;
-  }
-  .contact-page h5 {
-    margin-top: 0;
-  }
-  .contact-page h6 {
-    font-size: 12px;
-  }
-  #domestic {
-    padding-top: 0px;
-  }
-  .nav-pills li a {
-    padding: 10px 0px;
-    font-size: 14px;
-  }
-  #oversea, #domestic {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .contact-border {
-    margin: 5px 0;
-  }
-  .xs-contact {
-    position: relative;
-  }
-  .xs-contact .tab-content form {
-    padding-top: 1%;
-  }
-  .xs-contact .main-wrap-width {
-    margin: 5% auto;
-  }
-  .xs-contact .caption {
-    width: 70%;
-    margin: 0px auto;
-  }
-  .xs-contact .form-group {
-    margin-bottom: 1%;
-  }
-  .xs-contact input {
-    border-radius: 0;
-    height: 25px;
-  }
-  .xs-contact #contact-input {
-    background: #fff;
-  }
-  .xs-contact textarea {
-    background: #fff;
-  }
-  /* introduce*/
-  .introduce p {
-    padding: 7 0px 30px;
-    height: 100%;
-    overflow: scroll;
-    letter-spacing: 5px;
-  }
-  .introduce {
-    padding: 50px 20px;
-    position: relative;
-  }
-  .introduce h4 {
-    display: block;
-    position: absolute;
-    left: 35%;
-    top: 50px;
-    width: 50%;
-  }
-  .text-txt {
-    margin-bottom: 30px;
-  }
-  .navbar-logo {
-    margin-left: -12px;
-  }
-  .navbar-mglft {
-    margin-left: 0px;
-  }
-  .navbar-collapse-g {
-    width: 100%;
-  }
-  .navbar-bg-toggle .icon-bar {
-    background: #fff;
-  }
-  .navbar-display-none {
-    display: none;
-  }
-  .navbar-txt-mglf {
-    margin-left: 10px;
-  }
-  .navbar-display {
-    display: block;
-  }
-  .list-house-width {
-    margin-bottom: 10px;
-  }
+	/*公用属性*/
+	body {
+		margin: 0;
+		overflow: hidden;
+	}
+	html {
+		overflow-y: hidden!important;
+		font-size: calc(100vw/4.14);
+	}
+	.data-text-pdtop {
+		font-size: 0.28rem!important;
+	}
+	.xs-pic,
+	.xs-holder,
+	.xs-pic-container {
+		display: block;
+	}
+	.md-pic,
+	.holder {
+		display: none;
+	}
+	.to-next {
+		position: absolute;
+		bottom: 0.11rem;
+		width: 0.30rem;
+		font-size: 0.4rem;
+		color: rgba(255, 255, 255, 0.7);
+		left: 0;
+		right: 0;
+		margin: 0px auto;
+		cursor: pointer;
+		display: block;
+	}
+	.to-next:hover {
+		color: #337ab7;
+	}
+	/* header mobile phone style*/
+	.top {
+		display: none;
+	}
+	.navbar button {
+		float: left;
+	}
+	.nav-row {
+		margin-left: 0;
+		margin-right: 0;
+		height: 0px;
+	}
+	.navbar-collapse.in {
+		overflow-y: visible;
+	}
+	.navbar-ex1-collapse {
+		display: none;
+	}
+	.nav-container {
+		position: fixed;
+		top: 0;
+		z-index: 9;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		background: rgba(255, 255, 255, 0);
+	}
+	.menu-container {
+		background: rgba(0, 0, 0, 0.7)!important;
+	}
+	.navbar .navbar-collapse ul {}
+	.navbar .navbar-collapse ul li {
+		padding: 0 0 0 0;
+		height: 0.5rem;
+	}
+	.navbar .navbar-collapse ul li a {
+		background: rgba(0, 0, 0, 0.7);
+		line-height: 0.5rem;
+		color: #fff;
+	}
+	.nav-container .navbar {
+		background: rgba(255, 255, 255, 0);
+	}
+	.navbar .navbar-collapse {
+		padding: 0 0 0 0;
+	}
+	.navbar-logo {
+		display: none;
+	}
+	.navbar .navbar-collapse ul {
+		display: block;
+		width: 100%;
+		margin-top: 0;
+	}
+	.navbar .navbar-collapse li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.share-container {
+		display: none;
+	}
+	/* house descrption */
+	.shadow-bg {}
+	.with-bg-container .street {
+		font-size: 0.49rem;
+		line-height: 0.6rem;
+	}
+	#descrption {
+		height: 100%;
+		position: relative;
+	}
+	.with-bg-2 {
+		position: relative;
+		z-index: 0;
+	}
+	.with-bg-3 {
+		height: 2rem;
+		left: 0.26rem;
+		position: absolute;
+		top: 1.38rem;
+		width: 100%;
+	}
+	.with-bg-3 p {
+		font-size: 40px;
+	}
+	.with-bg-3 .address {
+		font-size: 0.085rem;
+	}
+	.with-bg-3 .price {
+		font-size: 0.27rem;
+	}
+	.with-bg-container .address {
+		margin-top: 0.38rem;
+		margin-bottom: 0.1rem;
+		color: #fff;
+	}
+	/* solutions*/
+	#solutions {
+		width: 100%;
+		height: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#solutions #myTab {
+		width: 80%;
+		text-align: center;
+		z-index: 0;
+		padding-top: 0.64rem;
+	}
+	#myTab li {
+		width: 49%;
+		display: inline-block;
+	}
+	.tab-content .detail {
+		line-height: 0.39rem;
+		font-size: 0.12rem;
+	}
+	.tab-content {
+		height: 5.9rem;
+		width: 100%;
+		margin: 0px auto;
+		padding-top: 0px!important;
+		margin-top: 0.79rem;
+		padding-left: 0.23rem;
+		padding-right: 0.23rem;
+	}
+	.border #desc .detail {
+		padding-left: 0.6rem;
+		padding-right: 0.6rem;
+	}
+	#myTabContent>div {
+		padding-top: 0.5rem;
+		height: 100%;
+	}
+	#myTabContent #detail span {
+		display: inline-block;
+		float: left;
+		width: 28%;
+		margin-left: 1%;
+	}
+	#myTabContent #detail div p {
+		display: inline-block;
+		float: right;
+		text-align: right;
+		width: 70%;
+		font-size: 0.14rem;
+		margin-right: 1%;
+	}
+	#myTabContent #detail span {
+		font-size: 0.14rem;
+	}
+	.border #detail .row .col-md-4 {
+		margin-bottom: 0.15rem;
+		padding: 0 0 0 0;
+	}
+	/* openday*/
+	#openday {
+		overflow: hidden;
+		position: relative;
+	}
+	#openday .row {
+		padding-top: 20%!important;
+		height: 100%;
+	}
+	#openday .col-lg-9 {
+		height: 40%;
+	}
+	.open {
+		padding-left: 10%;
+	}
+	.open .glyphicon,
+	.open .list-group {
+		display: none;
+	}
+	.public-show {
+		width: 100%;
+		display: none;
+	}
+	#xsopenday {
+		height: 100%;
+	}
+	.xs-pic-container {
+		position: relative;
+	}
+	.xs-public-show h5 {
+		font-weight: bold;
+		font-size: 0.19rem;
+		padding-left: 0.21rem;
+		padding-right: 0.21rem;
+	}
+	.xs-public-show p {
+		font-size: 0.13rem;
+		padding-left: 0.21rem;
+		padding-right: 1.5rem;
+		color: #949292;
+	}
+	.xs-public-show {
+		width: 100%;
+		height: 3rem;
+	}
+	.xs-public-show img {
+		height: 2.96rem;
+		width: 100%;
+	}
+	.openday-page {
+		position: absolute;
+		text-align: center;
+		top: 2.36rem;
+		width: 100%;
+	}
+	.openday-page a {
+		font-size: 0.6rem;
+		text-decoration: none;
+		color: #f4f4f4;
+	}
+	.jp-current {
+		color: #337ab7!important;
+	}
+	.openday-page a:visited {
+		border: 0;
+		text-decoration: none;
+		color: #f4f4f4;
+	}
+	/*house picture*/
+	#pricing {
+		position: relative;
+	}
+	.public {
+		font-size: 0.33rem;
+		font-weight: bold;
+		margin: 0 0 0 0;
+	}
+	.open-day p,
+	.main-pic p {
+		font-size: 0.33rem;
+		line-height: 0.33rem;
+	}
+	.main-pic p {
+		padding-bottom: 0.3rem!important;
+		margin-bottom: 0;
+	}
+	.main-pic {
+		padding-top: 0.7rem!important;
+		overflow: hidden;
+	}
+	.main-pic .house-wrap {
+		min-height: 0;
+	}
+	.list-group-pic {
+		padding-left: 0.33rem;
+		padding-right: 0.33rem;
+		margin-bottom: 10px;
+	}
+	.list-group-pic li img {
+		height: 75%;
+		padding-top: 0.05rem;
+		padding-bottom: 0.05rem;
+	}
+	.list-group-pic .col-sm-6,
+	.list-group-pic .col-xs-6 {
+		height: 75%;
+	}
+	.xs-holder {
+		text-align: center;
+	}
+	.xs-holder span {
+		display: none;
+	}
+	.xs-holder a {
+		font-size: 60px!important;
+		color: #f4f4f4;
+		border: 0;
+		text-decoration: none;
+	}
+	.xs-pic {
+		margin-top: 0;
+	}
+	.xs-holder a:visited {
+		color: #f4f4f4;
+	}
+	.xs-holder .jp-current,
+	.xs-holder .jp-current:hover {
+		color: #337ab7;
+	}
+	/*video mobile phone style*/
+	#videos {
+		position: relative;
+	}
+	.main-video {
+		height: 100%;
+	}
+	.main-video .data-text-pdtop {
+		margin-top: 30%!important;
+	}
+	.main-video .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.video-type .data-text-pdtop {
+		padding-top: 0.69rem;
+		font-size: 0.25rem!important;
+		padding-bottom: 0.69rem;
+	}
+	.main-video .player-video-wrapper {
+		width: 100%;
+		border: 0px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.player-video-wrapper {
+		height: 3rem;
+	}
+	#video-01 {
+		width: 300px!important;
+		height: 300px;
+		background: red;
+	}
+	.video-player {
+		width: 100%;
+		min-width: 300px;
+	}
+	/* map*/
+	.map {
+		position: relative;
+	}
+	.map-type-title {
+		position: absolute;
+		width: 100%;
+		height: 0.25rem;
+		font-size: 0.25rem;
+		top: 0.49rem;
+	}
+	.map-type-title h3 {
+		color: #000!important;
+		text-align: center;
+	}
+	.map-type {
+		padding-bottom: 0px;
+		z-index: -1;
+	}
+	/* real */
+	.real-view .real-view-title {
+		padding-top: 35%
+	}
+	.real-view .iframe-view {
+		width: 95%;
+		height: 40%;
+	}
+	/* */
+	.list-pic-width {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.list-house-width {
+		width: 100%;
+		margin: 0;
+	}
+	.outdoor-scene {
+		width: 100%;
+	}
+	.carousel-group-g {
+		height: 200px;
+	}
+	.list-mg-0 {
+		margin-bottom: 10px;
+	}
+	.map {
+		overflow: hidden;
+	}
+	/* contact*/
+	.md-contact {
+		display: none;
+	}
+	#contactUl {
+		padding-top: 0;
+		display: inline-block;
+		width: 80%;
+		margin-left: 10%;
+	}
+	#contactUl li {
+		display: inline-block;
+		width: 50%;
+		height: 30px;
+		border-radius: 0;
+		margin: 0 0 0 0;
+	}
+	.nav-justified>li {
+		float: left;
+	}
+	.xs-contact {
+		background: #f4f4f4;
+		min-height: 100%;
+	}
+	#contactUl a {
+		background: #afacac;
+		padding-top: 0.05rem;
+		padding-bottom: 0.05rem;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	#contactUl .active a {
+		background: #337ab7;
+	}
+	.xs-contact .tab-content {
+		margin-top: 0;
+	}
+	.thumbnail {
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 1%;
+	}
+	.thumbnail>img {
+		width: 40%;
+	}
+	.main-wrap-pdtop {
+		padding-top: 0.45rem;
+		padding-bottom: 0.3rem;
+		font-size: 0.25rem;
+	}
+	.xs-contact .contact-page h5 {
+		font-size: 0.16rem;
+		color: #425362;
+		margin-top: 0.12rem;
+	}
+	.xs-contact .form-wrap {
+		padding-left: 0.4rem;
+		padding-right: 0.4rem;
+	}
+	.xs-contact .form-wrap input {
+		height: 0.23rem;
+		margin-bottom: 0.1rem;
+	}
+	.xs-contact .form-wrap form {
+		padding-bottom: 0;
+	}
+	.xs-contact .form-wrap .btn {
+		border-radius: 0;
+		width: 0.8rem;
+	}
+	.contact-page h5 {
+		margin-top: 0;
+	}
+	.contact-page h6 {
+		font-size: 0.12rem;
+	}
+	#domestic {
+		padding-top: 0px;
+	}
+	.nav-pills li a {
+		padding: 0.1rem 0px;
+		font-size: 0.14rem;
+	}
+	#oversea,
+	#domestic {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.contact-border {
+		margin: 0 0;
+	}
+	.xs-contact {
+		position: relative;
+	}
+	.xs-contact .tab-content form {
+		padding-top: 1%;
+	}
+	.xs-contact .main-wrap-width {
+		margin: 5% auto;
+	}
+	.xs-contact .caption {
+		width: 70%;
+		margin: 0px auto;
+	}
+	.xs-contact .form-group {
+		margin-bottom: 1%;
+	}
+	.xs-contact .icon-color {
+		font-size: 0.12rem;
+	}
+	.xs-contact input {
+		border-radius: 0;
+		height: 0.12rem;
+	}
+	.xs-contact #contact-input {
+		background: #fff;
+	}
+	.xs-contact textarea {
+		background: #fff;
+	}
+	.xs-contact .contact-width {
+		width: 90%;
+		font-size: 0.1rem;
+		margin-bottom: 0;
+		text-align: right;
+	}
+	/* introduce*/
+	.introduce p {
+		padding: 0.7rem 0.3rem;
+		height: 100%;
+		overflow: scroll;
+		letter-spacing: 5px;
+	}
+	.introduce {
+		padding: 50px 20px;
+		position: relative;
+	}
+	.introduce h4 {
+		display: block;
+		position: absolute;
+		top: 0.5rem;
+		width: 100%;
+		padding-left: 0.24rem;
+		padding-right: 2.4rem;
+		text-align: left;
+		font-size: 0.16rem;
+	}
+	.introduce p {
+		font-size: 0.12rem;
+		line-height: 0.39rem;
+	}
+	.text-txt {
+		margin-bottom: 30px;
+	}
+	.navbar-logo {
+		margin-left: -12px;
+	}
+	.navbar-mglft {
+		margin-left: 0px;
+	}
+	.navbar-collapse-g {
+		width: 100%;
+	}
+	.navbar-bg-toggle .icon-bar {
+		background: #fff;
+	}
+	.navbar-display-none {
+		display: none;
+	}
+	.navbar-txt-mglf {
+		margin-left: 10px;
+	}
+	.navbar-display {
+		display: block;
+	}
+	.list-house-width {
+		margin-bottom: 10px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /*在768和991像素之间的屏幕里,这里的样式才生效*/
-  .navbar-mglft {
-    margin: 0px auto;
-    float: right;
-  }
-  .page-scroll-mgrt {
-    margin-right: 10px;
-  }
-  .navbar-mglft {
-    margin-left: 0;
-  }
-  .menu-navbar {
-    width: 76%;
-    height: 40px;
-    overflow: hidden;
-  }
-  .xs-contact {
-    display: none;
-  }
-  .navbar-display {
-    display: none;
-  }
+	/*在768和991像素之间的屏幕里,这里的样式才生效*/
+	.navbar-mglft {
+		margin: 0px auto;
+		float: right;
+	}
+	.page-scroll-mgrt {
+		margin-right: 10px;
+	}
+	.navbar-mglft {
+		margin-left: 0;
+	}
+	.menu-navbar {
+		width: 76%;
+		height: 40px;
+		overflow: hidden;
+	}
+	.xs-contact {
+		display: none;
+	}
+	.navbar-display {
+		display: none;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /*在992和1199像素之间的屏幕里,这里的样式才生效*/
-  .navbar-mglft {
-    margin: 0px auto;
-    float: right;
-  }
-  .page-scroll-mgrt {
-    margin-right: 20px;
-  }
-  .xs-contact {
-    display: none;
-  }
-  .list-group-house .list-house-width {
-    margin-right: 30px;
-  }
-  .list-group-house .list-house-width:last-child {
-    margin-right: 0;
-  }
-  .map-type {
-    margin-bottom: 60px;
-  }
-  .map-wrap {
-    width: 87%;
-    margin-bottom: 60px;
-  }
-  .navbar-display {
-    display: none;
-  }
+	/*在992和1199像素之间的屏幕里,这里的样式才生效*/
+	.navbar-mglft {
+		margin: 0px auto;
+		float: right;
+	}
+	.page-scroll-mgrt {
+		margin-right: 20px;
+	}
+	.xs-contact {
+		display: none;
+	}
+	.list-group-house .list-house-width {
+		margin-right: 30px;
+	}
+	.list-group-house .list-house-width:last-child {
+		margin-right: 0;
+	}
+	.map-type {
+		margin-bottom: 60px;
+	}
+	.map-wrap {
+		width: 87%;
+		margin-bottom: 60px;
+	}
+	.navbar-display {
+		display: none;
+	}
 }
 
 @media (min-width: 1200px) {
-  /*在大于1200像素的屏幕里,这里的样式才生效*/
- 	.container{
- 		width: 70%;
- 	}
-  .navbar-mglft {
-    width: 90%;
-    margin-right: 0px;
-    float: right;
-  }
-  .navbar-mglft {
-    margin-left: 0px;
-  }
-  .xs-contact {
-    display: none;
-  }
-  .map-wrap {
-    width: 65%;
-    margin-bottom: 60px;
-  }
-  .item-center {
-    height: 422px;
-  }
-  .item-center img {
-    margin: 0 auto;
-    height: 100%!important;
-  }
-  .navbar-display {
-    display: none;
-  }
+	/*在大于1200像素的屏幕里,这里的样式才生效*/
+	.container {
+		width: 80%;
+	}
+	.navbar-mglft {
+		margin-left: 60px;
+	}
+	.xs-contact {
+		display: none;
+	}
+	.map-wrap {
+		width: 65%;
+		margin-bottom: 60px;
+	}
+	.item-center {
+		height: 422px;
+	}
+	.item-center img {
+		margin: 0 auto;
+		height: 100%!important;
+	}
+	.navbar-display {
+		display: none;
+	}
 }
